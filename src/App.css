@@ -9,6 +9,7 @@
 .App{
   display: flex;
   gap:1vh;
+  height: 100vh;
   flex-direction: column;
   height: 100%;
   background-color: #ABA9C3;
@@ -225,6 +226,8 @@ video {
 
 .units{
   align-self: center;
+  height: 100vh;
+  margin-bottom: 5vw;
 }
 
 .units-handler
@@ -243,6 +246,7 @@ video {
   display: flex;
   flex-direction: column;
   gap: 1vw;
+  height: 10vw;
   background-color: #FCF7F8 ;
 }
 

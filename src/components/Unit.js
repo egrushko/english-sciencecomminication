@@ -1,4 +1,4 @@
-export const Unit = ({tasks,background}) => {
+export const Unit = ({tasks}) => {
     const tasksHandler = Array(tasks.length);
     const bttns = Array(tasks.length);
 
@@ -11,9 +11,6 @@ export const Unit = ({tasks,background}) => {
     
     return(
         <div>
-            <div className="unit-background">
-                <img src={background}/>
-            </div>
             <div className='unit-buttons'>
                     {bttns}
             </div>
