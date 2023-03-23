@@ -1,0 +1,39 @@
+.me-auto{
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+  }
+  .nav-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vw;
+    top: 0.8vw;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .navbar{
+    background-color: #FCF7F8;
+    top:-2vw;
+    position: relative;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+  }
+  
+  .nav-link p{
+    font-size: 2vw;
+  }
+  
+  .nav-link{
+    color: #CED3DC;
+    transition: .3s;
+  }
+  
+  .nav-link:hover{
+    color: #5B616A;
+  }
+  
+  .navbar-brand img {
+    height: 3vw;
+  }

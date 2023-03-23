@@ -1,3 +1,5 @@
+import '../css/InputField.css'
+
 export const InputField = ({savedValue,index,bools}) =>{
 
     function handleCompareInput(event) {
@@ -7,6 +9,6 @@ export const InputField = ({savedValue,index,bools}) =>{
           bools[index] = false;
     }
     return(
-        <input type="text" onChange={(event) => {handleCompareInput(event)}}/>
+        <input className='input-field' type="text" onChange={(event) => {handleCompareInput(event)}}/>
     );
 }

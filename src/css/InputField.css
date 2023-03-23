@@ -1,0 +1,12 @@
+.input-field{
+    border-color: #275DAD;
+    border-width: 0.1vw;
+    background-color: transparent;
+    color: #275DAD;
+    outline: none!important;
+    font-size: 1.5vw;
+    width: 20vw;
+    height: 1.5vw;
+    overflow: visible;
+}
+

@@ -1,0 +1,33 @@
+.text-container{
+    margin-top: 1vw;
+    font-size: 1vw;
+    height: 40vh;
+    text-align: left;
+    line-height: 1.5vw;
+    overflow: scroll;
+    padding: 0.3vw 2vw;
+    overflow-x: hidden;
+    background-color: #CED3DC;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+
+.text-container::-webkit-scrollbar{
+    width: 0.6vw;
+}
+
+
+.text-container::-webkit-scrollbar-thumb{
+    background-color: #275DAD;
+    border-radius: 0.5vw;
+}
+
+li{
+    color: #275DAD;
+    margin-top: 1vh;
+}
+
+li p {
+    font-size: 1.5vw;
+    color: #363A3f;
+}

@@ -1,4 +1,6 @@
-export const Task = ({type,title,helpText,text}) => {
+import '../css/Task.css'
+
+export const Task = ({type,title,helpText}) => {
     return(
         <div className="task">
                 <h1 className="task-title">
@@ -9,12 +11,8 @@ export const Task = ({type,title,helpText,text}) => {
                         {helpText}
                     </p>
                 </span>
-                {type}
-                <div className = 'task-text'>
-                    {text}
-                </div>
-                <div className="task-buttons">
-
+                <div className='task-type'>
+                    {type}
                 </div>
         </div>
     )

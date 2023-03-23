@@ -1,0 +1,30 @@
+.task{
+    min-height: 64.8vh;
+    left: -15vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    width: 80vw;
+    align-self: center;
+  }
+
+.task-type{
+    width: 80vw;
+    align-self: center;
+}
+
+.task-title{
+    font-size: 2.5vw;
+    text-align: left;
+    color: #FCF7F8;
+    font-weight: 600;
+}
+
+.task-explanation p{
+    color: #275DAD;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.8vw;
+    text-align: left;
+}

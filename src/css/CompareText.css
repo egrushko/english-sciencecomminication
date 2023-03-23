@@ -1,0 +1,109 @@
+.compare-answers{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: center;
+    gap:1vw;
+}
+
+.compare-answers-inline{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap:3vw;
+}
+
+.compare-answers-collage{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: center;
+    color:#363a3f;
+    gap:1vw;
+}
+
+
+.compare-task{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vh;
+}
+
+.compare-selector-answers
+{
+    font-size: 0;
+    display: inline-block;
+    margin-top: 1vw;
+    flex:1 0 33.333333%
+}
+
+.compareinline-selector-answers{
+    display: flex;
+    align-items: center;
+    min-width: 50vw;
+    justify-content: space-between;
+}
+
+.compareinline-selector-answers .form-control{
+    background-color: #FCF7F8;
+    padding: 0.3vw;
+    width: 100%;
+    border-radius: 1vw;
+    border-color: transparent;
+    font-size: 1.5vw;
+    transition: .3s;
+    color:#363a3f;
+    font-weight: 400;
+    text-align: left;
+}
+
+.compareinline-selector-answers p{
+    font-size: 1.8vw;
+    font-weight: 800;
+    text-align: center;
+    color: #363a3f;
+}
+
+.collage-block p{
+    font-size: 1.5vw !important;
+    background-color: #CED3DC;
+    text-align: left;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+
+
+.collage-answers .form-control{
+    background-color: #FCF7F8;
+    padding: 0.3vw;
+    width: 100%;
+    border-radius: 1vw;
+    border-color: transparent;
+    font-size: 1.5vw;
+    transition: .3s;
+    color:#363a3f;
+    text-align: center;
+    font-weight: 600;
+  }
+
+.collage-block{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    min-width: 25vw;
+    padding: 1vw 0 0;
+    flex:1 0 35.333333%;
+    margin-bottom: 2vw;
+    padding-bottom: 4vw;
+    border-bottom: 0.2vw solid #275DAD;
+}
+
+.collage-text{
+    display: flex;
+    gap:1vw;
+}
+
+.collage-answers{
+    display: flex;
+    justify-content: space-evenly;
+    gap:1vw;
+}

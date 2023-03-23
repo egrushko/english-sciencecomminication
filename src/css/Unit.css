@@ -1,0 +1,55 @@
+  .unit-task-unactive{
+    display: none;
+  }
+  .unit-buttons{
+    position: relative;
+    display:flex;
+    z-index: 9999;
+    top:-2.1vw;
+    width: 80vw;
+    overflow-x: overlay;
+    left: 10vw;
+    gap: 9%;
+    background: #FCF7F8;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    transform: rotateX(180deg);
+    padding: 1vw 0;
+  }
+
+  .unit-buttons::-webkit-scrollbar{
+    height: 0.5vw;
+  }
+
+
+.unit-buttons::-webkit-scrollbar-thumb{
+    background-color: #CED3DC;
+    border-radius: 0.5vw;
+    width: 1vw;
+}
+
+  .unit-button{
+    text-align: center;
+    transform: rotateX(180deg);
+    background-color: transparent;
+    border: 0;
+    min-width: 10vw;
+    font-size: 2vw;
+    font-weight: 400;
+    color: #CED3DC;
+    transition: .3s;
+  }
+  
+  .unit-button:hover{
+    color: #5B616A;
+  }
+  
+  .unit-tasks{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50vw;
+    left: 23vw;
+    position: relative;
+    padding: 2vw;
+  }
