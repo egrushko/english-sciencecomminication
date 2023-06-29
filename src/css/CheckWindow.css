@@ -11,20 +11,48 @@
     justify-content: center;
 }
 
+.check-window-close-button{
+    display: flex;
+    align-items: baseline;
+}
 .check-window{
     background-color: #ABA9C3;
     border-radius: 2vw;
-    padding: 2vw;
+    padding: 1vw;
     width: 25vw;
     text-align: center;
 }
 
 .check-window h3{
-    color: #CED3DC;
+    color: #fff;
     font-size: 4vw;
+    margin-left: auto;
 }
 
 .check-window p{
-    color: #CED3DC;
+    color: #fff;
     font-size: 3vw;
+}
+
+.results-holder{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 1vw 1vw 1vw 3.5vw;
+    gap:1vw;
+    align-content: center;
+    align-self: center;
+}
+
+.results-holder p{
+    font-size: 2vw;
+    flex:1 0 40%;
+}
+
+.correct-answer{
+    color: green;
+}
+
+.wrong-answer{
+    color: red;
 }

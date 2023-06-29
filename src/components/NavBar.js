@@ -11,9 +11,11 @@ export const NavBar = () => {
         <Navbar.Brand href="#home">
           <img src={icon}/>
         </Navbar.Brand>
+        <div className='site-title'><p>English for Science Communication</p></div>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#/"><p>Units</p></Nav.Link>
+          <Nav.Link href="#/"><p>Home</p></Nav.Link>
+            <Nav.Link href="#/"><p>Units 1 - 4</p></Nav.Link>
             <Nav.Link href="#/about"><p>About</p></Nav.Link>
           </Nav>
         </Navbar.Collapse>

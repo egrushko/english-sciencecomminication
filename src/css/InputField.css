@@ -5,8 +5,16 @@
     color: #275DAD;
     outline: none!important;
     font-size: 1.5vw;
-    width: 20vw;
-    height: 1.5vw;
+    height: 1.8vw;
     overflow: visible;
 }
 
+.input-field-correct{
+    border-color: green;
+    border-width: 0.2vw;
+}
+
+.input-field-wrong{
+    border-color: red;
+    border-width: 0.2vw;
+}

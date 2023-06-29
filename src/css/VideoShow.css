@@ -1,0 +1,29 @@
+.video-show{
+    display:flex;
+    width: 80vw;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+video{
+    height: auto;
+    width: 45vw;
+    align-self: center;
+}
+
+.video-show img{
+    width: auto;
+    min-width: 30vw;
+    max-width: 70vw;
+}
+
+.video-show .video-little-title{
+    font-size: 1.55vw !important;
+    color: #5B616A;
+}
+
+.video-show .video-title{
+    color: #5B616A;
+    font-size: 1.8vw !important;
+}

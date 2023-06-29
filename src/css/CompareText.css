@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    gap:3vw;
+    gap:1vw;
 }
 
 .compare-answers-collage{
@@ -18,6 +18,13 @@
     align-content: center;
     color:#363a3f;
     gap:1vw;
+}
+
+.compare-selector-answers{
+    display: flex;
+    justify-content: center;
+    gap: 1VW;
+    align-items: baseline;
 }
 
 
@@ -30,16 +37,21 @@
 
 .compare-selector-answers
 {
-    font-size: 0;
     display: inline-block;
     margin-top: 1vw;
     flex:1 0 33.333333%
+}
+
+.compare-selector-answers p{
+    font-size: 1.8vw !important;
+    color: #fff !important;
 }
 
 .compareinline-selector-answers{
     display: flex;
     align-items: center;
     min-width: 50vw;
+    text-align: left;
     justify-content: space-between;
 }
 
@@ -49,26 +61,42 @@
     width: 100%;
     border-radius: 1vw;
     border-color: transparent;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     transition: .3s;
     color:#363a3f;
     font-weight: 400;
     text-align: left;
 }
 
+.text-show ol{
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+}
+
+.compare-task img{
+    width: auto;
+    margin-top: 1vw;
+    max-width: 60vw;
+    min-width: 20vw;
+    align-self: center;
+}
+
 .compareinline-selector-answers p{
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     font-weight: 800;
-    text-align: center;
-    color: #363a3f;
+    min-width: 12vw;
+    text-align: left;
+    color: #fff;
 }
 
 .collage-block p{
     font-size: 1.5vw !important;
-    background-color: #CED3DC;
+    background-color: #fff;
     text-align: left;
     border-radius: 1vw;
     padding: 1vw;
+    color: #5B616A;
 }
 
 
@@ -92,7 +120,7 @@
     min-width: 25vw;
     padding: 1vw 0 0;
     flex:1 0 35.333333%;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     padding-bottom: 4vw;
     border-bottom: 0.2vw solid #275DAD;
 }

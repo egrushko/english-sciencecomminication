@@ -1,0 +1,87 @@
+.compare-selector-answers{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    align-items: baseline;
+    width: 80vw;
+    align-self: center;
+}
+
+.compare-selector-answers p{
+    font-size:1.5vw;
+    font-weight: 700;
+    color:#5B616A;
+    min-width: 40%;
+    text-align: left;
+}
+
+.form-control{
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.compare-task-two-columns{
+    display: flex;
+    gap:5vw;
+}
+
+.compare-task-two-columns>*{
+    flex: 1 0 40%;
+}
+
+.left-text ol li{
+    list-style-type: none;
+}
+
+.left-text{
+    padding-left: 1vw !important;
+}
+ol p{
+    font-size: 1.5vw;
+    color:#5B616A;
+}
+
+li h3{
+    font-size: 1.8vw !important;
+    font-weight: 900;
+    line-height: 1.6vw!important;
+}
+
+.input-task li h3{
+    color: #5B616A;
+}
+
+a{
+    border-radius: 2vw;
+    border: 0;
+    color:#275DAD;
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+
+.text-container{
+    padding:1vw 1vw;
+}
+
+.right-text{
+    padding-left: 1.5vw;
+}
+
+.right-text h3{
+    color:#275DAD;
+    font-weight: 800;
+    line-height: 2vw;
+}
+
+.right-text li{
+    list-style-type: none;
+    margin-bottom: 1vw;
+    border: #275DAD solid 0.2vw;
+    border-radius: 0.4vw;
+    width: 2vw;
+    height: 2vw;
+    padding: 0.4vw 0.2vw 0 0.2vw;
+    left: -1.5vw;
+    position: relative;
+    text-align: center;
+}

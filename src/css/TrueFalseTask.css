@@ -1,0 +1,24 @@
+.tf-task-statement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin: 1vw 0 0;
+}
+
+.tf-task-statement p{
+    font-size: 1.5vw;
+    color: #fff;
+    font-weight: 800;
+}
+
+.tf-task-boxes{
+    display: flex;
+    gap: 1vw;
+}
+
+.check-task{
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+}

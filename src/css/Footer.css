@@ -1,8 +1,9 @@
 .footer{
-    margin-top: 1.55vw;
+    margin-top: auto ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    justify-self:end;
     color: #275DAD;
   }
   

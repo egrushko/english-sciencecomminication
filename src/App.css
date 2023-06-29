@@ -8,14 +8,18 @@
 
 .App{
   display: flex;
-  height: 100%;
   flex-direction: column;
   background-color: #ABA9C3;
+  min-height: 100vh;
 }
 
 @font-face {
   font-family: 'SPro';
   src: url('./fonts/SourceSansPro-Regular.ttf');
+}
+
+body{
+  
 }
 
 p{
@@ -26,6 +30,16 @@ p{
 
 h1{
   font-size: 2vw;
+}
+
+h3{
+  white-space: pre-wrap !important;
+  font-weight: 800;
+}
+
+.select option p{
+  font-size: 1.5vw !important;
+  width: auto !important;
 }
 
 option{
@@ -82,6 +96,12 @@ option{
   transition: .3s;
   color:#363a3f;
   font-weight: 600;
+  min-width: 5vw;
+}
+
+.select-option-hide
+{
+  display: none;
 }
 
 .videos-text{
@@ -126,18 +146,73 @@ video {
 
 .input-words{
   display: flex;
-  font-size: 1.5vw;
   flex-wrap: wrap;
   align-self: center;
-  background-color: #CED3DC;
-  padding: 1vw 0 1vw 2.4vw;
+  background-color: #fff;
+  padding: 1vw;
+  border-radius: 1vw;
+  max-width: 80vw;
   border: 0.1vw solid #275DAD ;
 }
 
-.input-words>* {
+.input-words p {
+  font-size: 1.4vw !important;
+  color: #363a3f;
+  text-align: center;
   flex: 1 1 20%;
 }
 
+.unactive{
+  display: none;
+}
+
+.no-style{
+  list-style-type: none;
+}
+
+.input-box-with-word{
+  display: flex;
+  flex-direction: column;
+  gap:1vw;
+}
+
+.input-task-inputs{
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+}
+
+.input-line-type{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1vw;
+  border-radius: 1vw;
+  border: 0.1vw solid #275DAD ;
+}
+
+.input-line-type>*{
+  font-size: 1.25vw;
+}
+
+.bold{
+  font-weight: 800;
+}
+
+.text-show{
+  line-height: 2vw !important;
+}
+
+.image{
+  align-self: center;
+}
+
+iframe{
+  margin-left: 5vw;
+  align-self: center;
+}
 /*
 #5B616A текст
 #CED3DC светловатый

@@ -1,5 +1,4 @@
 .task{
-    min-height: 64.8vh;
     left: -15vw;
     position: relative;
     display: flex;
@@ -12,6 +11,9 @@
 .task-type{
     width: 80vw;
     align-self: center;
+    gap: 2vw;
+    flex-direction: column;
+    display: flex;
 }
 
 .task-title{
@@ -22,9 +24,14 @@
 }
 
 .task-explanation p{
-    color: #275DAD;
+    border:3px solid #fff;
+    padding: 1vw;
+    color: #0033ab;
+    background-color: #fff;
+    border-radius: 10px;
     font-size: 1.5vw;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.8vw;
     text-align: left;
+    margin-bottom: 2vw;
 }
