@@ -11,7 +11,7 @@ import {VideoShow} from '../Tasks/VideoShow'
 import {TextAndImageShow} from '../Tasks/TextAndImageShow'
 import video1img from '../../img/video1.1.png' 
 import video1 from '../../videos/video1.1.mp4'
-import video2 from '../../videos/video1.1.mp4'
+import video2 from '../../videos/video 1.2.mp4'
 import u1r3p1 from '../../pdf/u1r3p1.pdf'
 import u1r3p2 from '../../pdf/u1r3p2.pdf'
 import u1r3p3 from '../../pdf/u1r3p3.pdf'
@@ -28,7 +28,7 @@ import speaking from '../../img/speaking1.png'
 export const FirstUnit = () =>{
     return(
         <>
-        <Unit unitNum={1} names = {['Task 1','Task 2','Task 3','Task 4','Video 1.1','Task 5','Task 6','Video 1.2','Task 7','Task 8','Task 9','Speaking']} tasks={[
+        <Unit unitTitle={"What is the structure of a scientific paper?"} unitNum={1} names = {['Task 1','Task 2','Task 3','Task 4','Video 1.1','Task 5','Task 6','Video 1.2','Task 7','Task 8','Task 9','Speaking']} tasks={[
         <Task 
           title='Reading - 1' 
           helpText={'Read the text and choose the correct option for each section 1-10 described in the paragraphs A - K.\nThere is one extra paragraph which you do not need to use.'} 

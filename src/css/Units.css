@@ -15,6 +15,7 @@
   .unit-in-handler-buttons{
     display: flex;
     gap: 1vw;
+    justify-content: space-evenly;
   }
   
   .unit-in-handler{

@@ -13,7 +13,7 @@ import {TrueFalseTask} from '../Tasks/TrueFalseTask';
 
 export const FourthUnit = () => {
     return(
-        <Unit unitNum={4} names = {['Task 1','Task 2','Task 3','Task 4','Task 5','Task 6','Task 7','Task 8']}
+        <Unit unitNum={4} unitTitle={"Why Don’t the Mathematicians Learn to Speak?"} names = {['Task 1','Task 2','Task 3','Task 4','Task 5','Task 6','Task 7','Task 8']}
             tasks= {[<Task helpText = {'Choose the best version A, B, C or D to complete each statement 1-5.'} title = {'Reading - 1'}
                         type ={[ <InlineCompareTask helpText = '' startNum={0}
                             baseText={['\t\t\t\t\t\t\t   Why Don’t the Mathematicians Learn to Speak? ','The weekly colloquium in mathematics department is an opportunity for faculty and students to learn about developments in mathematics outside of their own area. Although some colloquia succeed very well in enlightening the audience, all too many fail to do so. Why is this? The speakers are highly able mathematicians, extremely knowledgeable and enthusiastic about their subject, yet the audience leaves the lecture disappointed.\n\nThe reason is, I think, that the speaker is not addressing the real audience in the room, but an imaginary audience existing in his or her mind. The imaginary audience knows all the terminology in the field, knows all but the most recent results, remembers the meaning of all the symbols introduced (and then quickly erased) by the speaker, and can follow complicated arguments and calculations on the board with ease. The real audience is different. With luck, it has a general mathematical education (say, one or two years of graduate study in algebra, analysis, geometry, and topology). It really would like to learn something from the speaker. The speaker soon leaves it in his wake and goes steaming ahead for the rest of the hour. An Why Don’t the Mathematicians Learn to Speak? opportunity is wasted.\n\nIt does not have to be this way. The particular branch of mathematics is irrelevant to the problem. One can be incomprehensible in any field. One can also communicate successfully in any field with the real audience, sitting there in all its ignorance. Necessary conditions for success are (1) discussion of some examples, (2) some explanation of how the problem arises from the classical body of mathematics, (3) avoidance of all but a few key calculations, and (4) ruthless elimination of most details. I remember a talk I heard as a graduate student. My lack of knowledge of geometry and topology was broad and deep. The speaker was Heinz Hopf, and he was talking about the existence of an almost complex structure on certain manifolds. When he started, I didn’t know what a tensor field was, or a complex manifold, or an almost complex structure. Nonetheless, he succeeded in teaching us enough of these things during his hour that it was an exciting and delightful occasion for me.']}
@@ -52,8 +52,8 @@ export const FourthUnit = () => {
                             }/>
                             ]}
                     />,
-                    <Task helpText = {'Match the words from the text on the left with their definitions on the right. There is one definition which you don’t need to use.'} title = {'Vocabulary - 1'}
-                        type ={[ <InlineCompareTask helpText = '' startNum={0}
+                    <Task helpText = {''} title = {'Vocabulary - 1'}
+                        type ={[ <InlineCompareTask helpText = 'Match the words from the text on the left with their definitions on the right. There is one definition which you don’t need to use.' startNum={0}
                             answers = {
                                 [             
                                     'system of specialized words and expressions used in a particular science, profession, activity etc',

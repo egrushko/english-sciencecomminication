@@ -11,6 +11,7 @@ import {VideoShow} from '../Tasks/VideoShow'
 import {TextAndImageShow} from '../Tasks/TextAndImageShow'
 import {TrueFalseTask} from '../Tasks/TrueFalseTask';
 import {SecondUnitBigText} from './SecondUnitBigText';
+import video21 from '../../videos/video 2.1.mp4'
 import video22 from '../../videos/video2.2.mp4'
 import speaking from '../../img/speaking2.png'
 import table from '../../img/table2.1.png'
@@ -25,7 +26,7 @@ import p17 from '../../pdf/p17.pdf'
 
 export const SecondUnit = () =>{
     return(
-        <Unit unitNum={2} names = {['Task 1','Task 2','Task 3','Task 4','Task 5','Task 6','Task 7','Task 8','Video 2.1','Video 2.2','Speaking']}
+        <Unit unitTitle={"How to read a scientific paper?"} unitNum={2} names = {['Task 1','Task 2','Task 3','Task 4','Task 5','Task 6','Task 7','Task 8','Video 2.1','Video 2.2','Speaking']}
         tasks={[
             <Task 
                 helpText = 'Read the text and mark True or False the statements 1- 10 below.'
@@ -301,7 +302,7 @@ export const SecondUnit = () =>{
                         justText
                         image = {table}
                         text={['• What is the first step in choosing the right reading strategy?','• What reading approaches can students use as part of their university reading habits?']}
-                        video={''} 
+                        video={video21} 
                     />
                 }
             />,

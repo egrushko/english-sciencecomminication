@@ -15,3 +15,8 @@
     display: flex;
     gap:1vw;
   }
+
+  .footer-link{
+    font-size: 1vw !important;
+    color: white;
+  }

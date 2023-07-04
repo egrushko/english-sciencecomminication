@@ -1,6 +1,7 @@
 import './App.css';
 import {NavBar} from './components/NavBar'
 import {Footer} from './components/Footer'
+import {Home} from './components/Home'
 import {Units} from './components/Units'
 import {About} from './components/About'
 import {FirstUnit} from './components/Units/FirstUnit.js'
@@ -15,7 +16,8 @@ function App() {
     <div className='App'>
       <NavBar/>
         <Routes>
-          <Route exact path = '/' element={<Units/>}></Route>
+          <Route exact path = '/' element={<Home/>}></Route>
+          <Route path = '/units' element={<Units/>}></Route>
           <Route path = '/about' element={<About/>}></Route>
           <Route path = '/unit1' element={<FirstUnit/>}></Route>
           <Route path = '/unit2' element={<SecondUnit/>}></Route>
