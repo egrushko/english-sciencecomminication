@@ -145,6 +145,7 @@ video {
 }
 
 .input-words{
+  margin-top: 1vw;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -156,9 +157,10 @@ video {
 }
 
 .input-words p {
-  font-size: 1.4vw !important;
+  font-size: 1.1vw !important;
   color: #363a3f;
   text-align: center;
+  font-weight: 800;
   flex: 1 1 20%;
 }
 

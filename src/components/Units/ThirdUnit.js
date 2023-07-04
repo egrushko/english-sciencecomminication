@@ -13,6 +13,8 @@ import {TrueFalseTask} from '../Tasks/TrueFalseTask';
 import {ThirdUnitBigText} from  './ThirdUnitBigText.js'
 import {ImagesTask} from '../Tasks/ImagesTask.js'
 
+import video31 from '../../videos/video 3.1.mp4'
+import video32 from '../../videos/video 3.2.mp4'
 import sp1i1 from '../../img/unit3speaking1i1.png'
 import sp1i2 from '../../img/unit3speaking1i2.png'
 import sp1i3 from '../../img/unit3speaking1i3.png'
@@ -20,16 +22,11 @@ import sp1i4 from '../../img/unit3speaking1i4.png'
 import sp1i5 from '../../img/unit3speaking1i5.png'
 import sp1i6 from '../../img/unit3speaking1i6.png'
 
-import u3s1p1 from '../../pdf/u3s1p1.pdf'
-import u3s1p2 from '../../pdf/u3s1p2.pdf'
-import u3s1p3 from '../../pdf/u3s1p3.pdf'
-import u3s1p4 from '../../pdf/u3s1p4.pdf'
-import u3s1p5 from '../../pdf/u3s1p5.pdf'
-import u3s1p6 from '../../pdf/u3s1p6.pdf'
+import speaking from '../../img/speaking3.png'
 
 export const ThirdUnit = () => {
     return(
-        <Unit unitNum={3} names = {['Task 1','Task 2','Task 3','Task 4',"Video 3.1",'Speaking 1','Task 5','Task 6','Video 3.2','Speaking 2']}
+        <Unit unitTitle={"Improving Power Point Presentations"} unitNum={3} names = {['Task 1','Task 2','Task 3','Task 4',"Video 3.1",'Speaking 1','Task 5','Task 6','Video 3.2','Speaking 2']}
             tasks= {
                 [
                     <Task 
@@ -59,10 +56,10 @@ export const ThirdUnit = () => {
                         } 
                     />,
                     <Task 
-                        helpText = {'Match the words from the text with their definitions. There is one extra definition which you don’t need to use.'}
+                        helpText = {''}
                         title = 'Vocabulary - 1'
                         type = {[
-                            <InlineCompareTask helpText = '' startNum={0}
+                            <InlineCompareTask helpText = 'Match the words from the text with their definitions. There is one extra definition which you don’t need to use.' startNum={0}
                                 answers = {
                                     [             
                                         'a printed symbol, such as a square or circle, that appears before important things on a list, used in order to emphasize each thing',
@@ -219,7 +216,7 @@ export const ThirdUnit = () => {
                             type={
                                 [
                                     <TrueFalseTask helpText='As you watch the video mark (T) the points discussed in the video and mark (F) the points not discussed in the video.'
-                                    video={" "}
+                                    video={video31}
                                     textTitle={''}
                                     startNum={0}
                                     statements={
@@ -246,10 +243,20 @@ export const ThirdUnit = () => {
                                         contType = 'none'
                                         type={'words'}
                                         useInputLength
-                                        baseText={['Slide transitions','Colour','Overusing bullet list','Spelling mistakes','Too much information on a slide','Animations','Choosing font','Too many slides','Too much text on a slide','Pointing tools']}
-                                        helpText={'Watch the video again and put the discussed points from Part 1 in the correct order. Take detailed notes to be able to discuss the main issues in CLASS.'}
+                                        video={" "}
+                                        baseText={['Slide transitions',
+                                        'Too much information on a slide',
+                                        'Colour',
+                                        'Overusing bullet lists',
+                                        'Spelling mistakes',
+                                        'Animations',
+                                        'Choosing fonts',
+                                        'Too many slides',
+                                        'Too much text on a slide',
+                                        'Pointing tools']}
+                                        helpText={'Watch the video again and put the discussed points from the box in the correct order. There are more points in the box than you need to use. Be ready to discuss the main issues in CLASS.'}
                                         text={['{inputs[0]}\n\n{inputs[1]}\n\n{inputs[2]}\n\n{inputs[3]}\n\n{inputs[4]}\n\n{inputs[5]}\n\n{inputs[6]}\n\n{inputs[7]}\n\n']}
-                                        values={['Too much text on a slide','Spelling mistakes','Overusing bullet lists','Colour','Too many slides','Too much information on a slide','Animations','Hard to read fonts',"","",""]}/>
+                                        values={['Too much text on a slide','Spelling mistakes','Overusing bullet lists','Colour','Too many slides','Too much information on a slide','Animations','Choosing fonts']}/>
                                 ]
                             }
                         />,
@@ -313,7 +320,7 @@ export const ThirdUnit = () => {
                                     type={'text'} 
                                     contType='none'
                                     useNums
-                                    video={' '}
+                                    video={video32}
                                     textTitle="Creative Presentation Ideas"
                                     text={
                                         [
@@ -329,6 +336,7 @@ export const ThirdUnit = () => {
                             helpText={'Be ready to speak in CLASS about your own experience of creating visual aids for your presentation. Use the questions as the guidelines for your talk.'}
                             type={
                                 <TextAndImageShow
+                                image={speaking}
                                 text={
                                     [
                                         '• What computer-based presentation software have you used? Which of those do you prefer? Why?',

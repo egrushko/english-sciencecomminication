@@ -65,6 +65,10 @@
     margin-bottom: 2vw;
   }
   
+.unit-title-in{
+  margin-left: 10vw;
+}
+
   .unit-task-changer{
     display: flex;
     align-self: center;

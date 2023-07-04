@@ -1,0 +1,71 @@
+.page-title{
+    font-size: 2vw;
+    font-weight: 800;
+    color: #275DAD;
+    margin-bottom: 1vw;
+}
+
+.page{
+    width: 60vw;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+.page ol {
+    margin-top: 0.5vw;
+    align-self: flex-start;
+}
+
+.about-title{
+    align-self: flex-start;
+    font-size: 1.8vw !important;
+    font-weight: 800;
+    color: #275DAD;
+}
+
+.page a{
+    font-weight: 800;
+    color:#5B616A;
+}
+
+.page ul{
+    font-size: 1.5vw;
+    color:#5B616A;
+    margin-bottom: 0.5vw;
+}
+
+.page h2{
+    margin-bottom: 1vw;
+}
+
+.page p{
+    font-size: 1.2vw;
+}
+
+.page-table{
+    align-self:flex-start;
+}
+
+.home-text{
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.teacher-name{
+    font-size: 1.5vw;
+    color:#5B616A;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+
+.low-text{
+    font-size: 1.2vw;
+    color: #5B616A;
+}
