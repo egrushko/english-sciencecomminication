@@ -13,8 +13,8 @@ import {TrueFalseTask} from '../Tasks/TrueFalseTask';
 import {ThirdUnitBigText} from  './ThirdUnitBigText.js'
 import {ImagesTask} from '../Tasks/ImagesTask.js'
 
-import video31 from '../../videos/video 3.1.mp4'
-import video32 from '../../videos/video 3.2.mp4'
+/*import video31 from '../../videos/video 3.1.mp4'*/
+/*import video32 from '../../videos/video 3.2.mp4'*/
 import sp1i1 from '../../img/unit3speaking1i1.png'
 import sp1i2 from '../../img/unit3speaking1i2.png'
 import sp1i3 from '../../img/unit3speaking1i3.png'
@@ -216,7 +216,7 @@ export const ThirdUnit = () => {
                             type={
                                 [
                                     <TrueFalseTask helpText='As you watch the video mark (T) the points discussed in the video and mark (F) the points not discussed in the video.'
-                                    video={video31}
+                                    video={''}
                                     textTitle={''}
                                     startNum={0}
                                     statements={
@@ -320,7 +320,7 @@ export const ThirdUnit = () => {
                                     type={'text'} 
                                     contType='none'
                                     useNums
-                                    video={video32}
+                                    video={''}
                                     textTitle="Creative Presentation Ideas"
                                     text={
                                         [

@@ -14,9 +14,9 @@ import {TrueFalseTask} from '../Tasks/TrueFalseTask';
 export const FourthUnit = () => {
     return(
         <Unit unitNum={4} unitTitle={"Why Don’t the Mathematicians Learn to Speak?"} names = {['Task 1','Task 2','Task 3','Task 4','Task 5','Task 6','Task 7','Task 8']}
-            tasks= {[<Task helpText = {'Choose the best version A, B, C or D to complete each statement 1-5.'} title = {'Reading - 1'}
+            tasks= {[<Task helpText = {'Read the text and choose the best version to complete each statement (1-5).'} title = {'Reading - 1'}
                         type ={[ <InlineCompareTask helpText = '' startNum={0}
-                            baseText={['\t\t\t\t\t\t\t   Why Don’t the Mathematicians Learn to Speak? ','The weekly colloquium in mathematics department is an opportunity for faculty and students to learn about developments in mathematics outside of their own area. Although some colloquia succeed very well in enlightening the audience, all too many fail to do so. Why is this? The speakers are highly able mathematicians, extremely knowledgeable and enthusiastic about their subject, yet the audience leaves the lecture disappointed.\n\nThe reason is, I think, that the speaker is not addressing the real audience in the room, but an imaginary audience existing in his or her mind. The imaginary audience knows all the terminology in the field, knows all but the most recent results, remembers the meaning of all the symbols introduced (and then quickly erased) by the speaker, and can follow complicated arguments and calculations on the board with ease. The real audience is different. With luck, it has a general mathematical education (say, one or two years of graduate study in algebra, analysis, geometry, and topology). It really would like to learn something from the speaker. The speaker soon leaves it in his wake and goes steaming ahead for the rest of the hour. An Why Don’t the Mathematicians Learn to Speak? opportunity is wasted.\n\nIt does not have to be this way. The particular branch of mathematics is irrelevant to the problem. One can be incomprehensible in any field. One can also communicate successfully in any field with the real audience, sitting there in all its ignorance. Necessary conditions for success are (1) discussion of some examples, (2) some explanation of how the problem arises from the classical body of mathematics, (3) avoidance of all but a few key calculations, and (4) ruthless elimination of most details. I remember a talk I heard as a graduate student. My lack of knowledge of geometry and topology was broad and deep. The speaker was Heinz Hopf, and he was talking about the existence of an almost complex structure on certain manifolds. When he started, I didn’t know what a tensor field was, or a complex manifold, or an almost complex structure. Nonetheless, he succeeded in teaching us enough of these things during his hour that it was an exciting and delightful occasion for me.']}
+                            baseText={['\t\t\t\t\t\t\t   Why Don’t the Mathematicians Learn to Speak? ','\nThe weekly colloquium in mathematics department is an opportunity for faculty and students to learn about developments in mathematics outside of their own area. Although some colloquia succeed very well in enlightening the audience, all too many fail to do so. Why is this? The speakers are highly able mathematicians, extremely knowledgeable and enthusiastic about their subject, yet the audience leaves the lecture disappointed.\n\nThe reason is, I think, that the speaker is not addressing the real audience in the room, but an imaginary audience existing in his or her mind. The imaginary audience knows all the terminology in the field, knows all but the most recent results, remembers the meaning of all the symbols introduced (and then quickly erased) by the speaker, and can follow complicated arguments and calculations on the board with ease. The real audience is different. With luck, it has a general mathematical education (say, one or two years of graduate study in algebra, analysis, geometry, and topology). It really would like to learn something from the speaker. The speaker soon leaves it in his wake and goes steaming ahead for the rest of the hour. An Why Don’t the Mathematicians Learn to Speak? opportunity is wasted.\n\nIt does not have to be this way. The particular branch of mathematics is irrelevant to the problem. One can be incomprehensible in any field. One can also communicate successfully in any field with the real audience, sitting there in all its ignorance. Necessary conditions for success are (1) discussion of some examples, (2) some explanation of how the problem arises from the classical body of mathematics, (3) avoidance of all but a few key calculations, and (4) ruthless elimination of most details. I remember a talk I heard as a graduate student. My lack of knowledge of geometry and topology was broad and deep. The speaker was Heinz Hopf, and he was talking about the existence of an almost complex structure on certain manifolds. When he started, I didn’t know what a tensor field was, or a complex manifold, or an almost complex structure. Nonetheless, he succeeded in teaching us enough of these things during his hour that it was an exciting and delightful occasion for me.']}
                             answers = {
                                 [             
                                     ['to test students’ knowledge','to educate the audience in the new fields','to network with colleagues','all the statements above'],
@@ -24,7 +24,7 @@ export const FourthUnit = () => {
                                     'the speaker is not well prepared for the lecture','. all the statements above'],
                                     ['knows all the terminology in the field','remembers the meaning of all the symbols',
                                     'would like to learn something from the speaker','all the statements above'],
-                                    ['discussion of some examples','elimination of most details','only key calculations','all the statements above'],
+                                    ['discussion of some examples','elimination of most details','only key calculations','discussion of some examples, elimination of most details and only key calculations'],
                                     ['the speaker succeeded in teaching the audience and made his lecture into an exciting and delightful event',
                                     'he was greatly interested in topology and geometry','the speaker was talking about the existence of an almost complex structure on certain manifolds',
                                     'all the statements above']
@@ -36,7 +36,7 @@ export const FourthUnit = () => {
                                     'to educate the audience in the new fields',
                                     'the speaker has little idea about the audience’s knowledge in the subject',
                                     'would like to learn something from the speaker',
-                                    'all the statements above',
+                                    'discussion of some examples, elimination of most details and only key calculations',
                                     'the speaker succeeded in teaching the audience and made his lecture into an exciting and delightful event',
                                 ]
                             }
@@ -86,7 +86,24 @@ export const FourthUnit = () => {
                                     '5. Graduate study',
                                     '6. Elimination'
                                 ]
-                            }/>
+                            }/>,
+                            <InputCheckTask startNum = {0}
+                                type={'words'} 
+                                useAB={true} 
+                                helpText={'Complete the sentences with the words from the box. You will need one word for each pair of sentences, but think if you need a singular or a plural form in each case. There are more words in the box than you need to use.'}
+                                text={[
+                                    ['a) University {inputs[0]} are generally judged by their research quality.\n','b) He is a lecturer in the {inputs[1]} of psychology at Trinity College, Dublin'],
+                                    ['a) In recent years there have been many conferences, {inputs[2]} and other fora on the subject','b) One of the contributors to that {inputs[3]} was a university professor who has been teaching computer science for decades.'],
+                                    ['a) A drop in enrollment will affect students, {inputs[4]}, and administrators.','b) The {inputs[5]} agreed on a change in the requirements.'],
+                                    ['a) It was an interesting programme, which gave the facts without using too much scientific {inputs[6]}.',"b) Plus, there's a lot of medical {inputs[7]} to get your head around."],
+                                    ['a) My favourite {inputs[8]} is math.','b) The college offers a wide range of {inputs[9]}.'],
+                                    ['a) It is better to convince by {inputs[10]} than seduce by example.','b) The chapters are carefully researched, and provide an engaging combination of substantial empirical detail with insightful {inputs[11]}.'],
+                                    ['a) The question of which manifolds have piecewise-linear triangulations has led to much research in {inputs[12]}.','b) Infinitely long sentences arise in areas of mathematics including {inputs[13]} and model theory.'],
+                                    ['a) Computers can perform {inputs[14]} very quickly.','b) We used different methods of {inputs[15]}, but we both got the same result.']
+                                ]}
+                                baseText={['colloquium','department','faculty','subject','terminology','symbol','argument','calculation','graduate study','topology']}
+                                values={['departments','department',['colloquiums','colloquia'],'colloquium','faculty','faculty','terminology','subject','subjects','argument','arguments','topology',
+                                    'topology','proofs','calculations','calculation']}/>
                             ]}
                     />,
                     <Task
@@ -95,7 +112,7 @@ export const FourthUnit = () => {
                         type={
                             <InputCheckTask helpText={''} startNum={0}
                                 type={'text'} 
-                                baseText={['\t\t\t\t\t\t\t   Why Don’t the Mathematicians Learn to Speak? ','The weekly colloquium in mathematics department is an opportunity for faculty and students to learn about developments in mathematics outside of their own area. Although some colloquia succeed very well in enlightening the audience, all too many fail to do so. Why is this? The speakers are highly able mathematicians, extremely knowledgeable and enthusiastic about their subject, yet the audience leaves the lecture disappointed.\n\nThe reason is, I think, that the speaker is not addressing the real audience in the room, but an imaginary audience existing in his or her mind. The imaginary audience knows all the terminology in the field, knows all but the most recent results, remembers the meaning of all the symbols introduced (and then quickly erased) by the speaker, and can follow complicated arguments and calculations on the board with ease. The real audience is different. With luck, it has a general mathematical education (say, one or two years of graduate study in algebra, analysis, geometry, and topology). It really would like to learn something from the speaker. The speaker soon leaves it in his wake and goes steaming ahead for the rest of the hour. An Why Don’t the Mathematicians Learn to Speak? opportunity is wasted.\n\nIt does not have to be this way. The particular branch of mathematics is irrelevant to the problem. One can be incomprehensible in any field. One can also communicate successfully in any field with the real audience, sitting there in all its ignorance. Necessary conditions for success are (1) discussion of some examples, (2) some explanation of how the problem arises from the classical body of mathematics, (3) avoidance of all but a few key calculations, and (4) ruthless elimination of most details. I remember a talk I heard as a graduate student. My lack of knowledge of geometry and topology was broad and deep. The speaker was Heinz Hopf, and he was talking about the existence of an almost complex structure on certain manifolds. When he started, I didn’t know what a tensor field was, or a complex manifold, or an almost complex structure. Nonetheless, he succeeded in teaching us enough of these things during his hour that it was an exciting and delightful occasion for me.']}
+                                baseText={['\t\t\t\t\t\t\t   Why Don’t the Mathematicians Learn to Speak? ','\nThe weekly colloquium in mathematics department is an opportunity for faculty and students to learn about developments in mathematics outside of their own area. Although some colloquia succeed very well in enlightening the audience, all too many fail to do so. Why is this? The speakers are highly able mathematicians, extremely knowledgeable and enthusiastic about their subject, yet the audience leaves the lecture disappointed.\n\nThe reason is, I think, that the speaker is not addressing the real audience in the room, but an imaginary audience existing in his or her mind. The imaginary audience knows all the terminology in the field, knows all but the most recent results, remembers the meaning of all the symbols introduced (and then quickly erased) by the speaker, and can follow complicated arguments and calculations on the board with ease. The real audience is different. With luck, it has a general mathematical education (say, one or two years of graduate study in algebra, analysis, geometry, and topology). It really would like to learn something from the speaker. The speaker soon leaves it in his wake and goes steaming ahead for the rest of the hour. An Why Don’t the Mathematicians Learn to Speak? opportunity is wasted.\n\nIt does not have to be this way. The particular branch of mathematics is irrelevant to the problem. One can be incomprehensible in any field. One can also communicate successfully in any field with the real audience, sitting there in all its ignorance. Necessary conditions for success are (1) discussion of some examples, (2) some explanation of how the problem arises from the classical body of mathematics, (3) avoidance of all but a few key calculations, and (4) ruthless elimination of most details. I remember a talk I heard as a graduate student. My lack of knowledge of geometry and topology was broad and deep. The speaker was Heinz Hopf, and he was talking about the existence of an almost complex structure on certain manifolds. When he started, I didn’t know what a tensor field was, or a complex manifold, or an almost complex structure. Nonetheless, he succeeded in teaching us enough of these things during his hour that it was an exciting and delightful occasion for me.']}
                                 text={
                                     [
                                         'achievement, advancement, progress, {inputs[0]}',
@@ -114,54 +131,42 @@ export const FourthUnit = () => {
                         }
                     />,
                     <Task 
-                        title={'Vocabulary - 3'}
-                        helpText = {'Read the paragraph and choose the right word from the box to fill in the gaps. There are more words in the box than you need to use.'}
-                        type={[
-                            <InputCheckTask startNum = {0}
-                                useNums = {true}
-                                contType = 'none'
-                                type={'words'}
-                                justText={true}
-                                helpText={''}
-                                text={['The lecturer may help students to {inputs[0]} and record the main points by writing {inputs[1]} and key words on a board, by repetition, a change of voice, a meaningful {inputs[2]}, or by using such phrases as: most important, note that, and remember that, to {inputs[3]} things that you may wish to record. Words such as first, second, also, further­more, moreover, therefore, and finally, indicate {inputs[4]} in an argument. But and however indicate a qualification. Because indicates a {inputs[5]}. On the one hand and on the other hand indicate a {inputs[6]}. Illustrated by, for example, and as seen in, indicate an {inputs[7]}. All these words, although students may not record them, help them to make good notes.']}
-                                baseText={['pause','reason','select','stages','comparison','headings','contrast','graphs','example','emphasize']}
-                                values={['select','headings','pause','emphasize','stages','reason','contrast','example']}/>
-                                ]
-                            }                                           
-                    />,
-                    <Task 
-                        title='Vocabulary - 4' 
+                        title='Vocabulary - 3' 
                         helpText={'Skim the text and find the English equivalents for the Russian collocations 1-18. '} 
                         type={
                             <InputCheckTask startNum = {0}
                             type={'text'} 
                             helpText={''} 
-                            baseText={['\t\t\t\t\t\t\t   Why Don’t the Mathematicians Learn to Speak? ','The weekly colloquium in mathematics department is an opportunity for faculty and students to learn about developments in mathematics outside of their own area. Although some colloquia succeed very well in enlightening the audience, all too many fail to do so. Why is this? The speakers are highly able mathematicians, extremely knowledgeable and enthusiastic about their subject, yet the audience leaves the lecture disappointed.\n\nThe reason is, I think, that the speaker is not addressing the real audience in the room, but an imaginary audience existing in his or her mind. The imaginary audience knows all the terminology in the field, knows all but the most recent results, remembers the meaning of all the symbols introduced (and then quickly erased) by the speaker, and can follow complicated arguments and calculations on the board with ease. The real audience is different. With luck, it has a general mathematical education (say, one or two years of graduate study in algebra, analysis, geometry, and topology). It really would like to learn something from the speaker. The speaker soon leaves it in his wake and goes steaming ahead for the rest of the hour. An Why Don’t the Mathematicians Learn to Speak? opportunity is wasted.\n\nIt does not have to be this way. The particular branch of mathematics is irrelevant to the problem. One can be incomprehensible in any field. One can also communicate successfully in any field with the real audience, sitting there in all its ignorance. Necessary conditions for success are (1) discussion of some examples, (2) some explanation of how the problem arises from the classical body of mathematics, (3) avoidance of all but a few key calculations, and (4) ruthless elimination of most details. I remember a talk I heard as a graduate student. My lack of knowledge of geometry and topology was broad and deep. The speaker was Heinz Hopf, and he was talking about the existence of an almost complex structure on certain manifolds. When he started, I didn’t know what a tensor field was, or a complex manifold, or an almost complex structure. Nonetheless, he succeeded in teaching us enough of these things during his hour that it was an exciting and delightful occasion for me.']}
+                            baseText={['\t\t\t\t\t\t\t   Why Don’t the Mathematicians Learn to Speak? ','\nThe weekly colloquium in mathematics department is an opportunity for faculty and students to learn about developments in mathematics outside of their own area. Although some colloquia succeed very well in enlightening the audience, all too many fail to do so. Why is this? The speakers are highly able mathematicians, extremely knowledgeable and enthusiastic about their subject, yet the audience leaves the lecture disappointed.\n\nThe reason is, I think, that the speaker is not addressing the real audience in the room, but an imaginary audience existing in his or her mind. The imaginary audience knows all the terminology in the field, knows all but the most recent results, remembers the meaning of all the symbols introduced (and then quickly erased) by the speaker, and can follow complicated arguments and calculations on the board with ease. The real audience is different. With luck, it has a general mathematical education (say, one or two years of graduate study in algebra, analysis, geometry, and topology). It really would like to learn something from the speaker. The speaker soon leaves it in his wake and goes steaming ahead for the rest of the hour. An Why Don’t the Mathematicians Learn to Speak? opportunity is wasted.\n\nIt does not have to be this way. The particular branch of mathematics is irrelevant to the problem. One can be incomprehensible in any field. One can also communicate successfully in any field with the real audience, sitting there in all its ignorance. Necessary conditions for success are (1) discussion of some examples, (2) some explanation of how the problem arises from the classical body of mathematics, (3) avoidance of all but a few key calculations, and (4) ruthless elimination of most details. I remember a talk I heard as a graduate student. My lack of knowledge of geometry and topology was broad and deep. The speaker was Heinz Hopf, and he was talking about the existence of an almost complex structure on certain manifolds. When he started, I didn’t know what a tensor field was, or a complex manifold, or an almost complex structure. Nonetheless, he succeeded in teaching us enough of these things during his hour that it was an exciting and delightful occasion for me.']}
                             text={['еженедельный коллоквиум на кафедре математики - {inputs[0]}',
-                                'узнавать о достижениях в математике, выходящих за пределы собственной сферы знаний - {inputs[1]}',
-                                'добиваться успехов в обучении / росвещении слушателей - {inputs[2]}',
-                                'в высшей степени знающий и любящий свой предмет - {inputs[3]}',
-                                'обращаться не к реальным слушателям в аудитории, а к воображаемым - {inputs[4]}',
-                                'знать всю терминологию в области - {inputs[5]}',
-                                'помнить значение всех символов, вводимых лектором / докладчиком - {inputs[6]}',
-                                'с легкостью следить за всеми сложными аргументами и  вычислениями на доске - {inputs[7]}',
-                                'два года магистратуры по алгебре, анализу, геометрии и топологии - {inputs[8]}',
-                                'конкретная отрасль математики - {inputs[9]}',
-                                'не относящийся к данной математической задаче - {inputs[10]}',
-                                'успешно общаться с реальными слушателями - {inputs[11]}',
-                                'обсуждение некоторых примеров - {inputs[12]}',
-                                'немного объяснения того, как эта задача возникает из классической математики - {inputs[13]}',
-                                'избежание всех, кроме ключевых вычислений - {inputs[14]}',
-                                'безжалостное исключение большинства деталей - {inputs[15]}',
-                                'тензорное поле, комплексное многообразие - {inputs[16]}',
-                                'интересное и восхитительное событие - {inputs[17]}'
+                                'возможность для преподавательского состава и студентов - {inputs[1]}',
+                                'узнавать о достижениях в математике, выходящих за пределы собственной сферы знаний - {inputs[2]}',
+                                'добиваться успехов в обучении / росвещении слушателей - {inputs[3]}',
+                                'в высшей степени знающий и любящий свой предмет - {inputs[4]}',
+                                'обращаться не к реальным слушателям в аудитории, а к воображаемым - {inputs[5]}',
+                                'знать всю терминологию в области - {inputs[6]}',
+                                'помнить значение всех символов, вводимых лектором / докладчиком - {inputs[7]}',
+                                'с легкостью следить за всеми сложными аргументами и  вычислениями на доске - {inputs[8]}',
+                                'иметь общее математическое образование - {inputs[9]}',
+                                'два года магистратуры по алгебре, анализу, геометрии и топологии - {inputs[10]}',
+                                'не имеющий отношения к проблеме - {inputs[11]}',
+                                'конкретная отрасль математики - {inputs[12]}',
+                                'успешно общаться с реальными слушателями - {inputs[13]}',
+                                'обсуждение некоторых примеров - {inputs[14]}',
+                                'немного объяснения того, как эта задача возникает из классической математики - {inputs[15]}',
+                                'избежание всех, кроме ключевых вычислений - {inputs[16]}',
+                                'безжалостное исключение большинства деталей - {inputs[17]}',
+                                'тензорное поле, комплексное многообразие - {inputs[18]}',
+                                'интересное и восхитительное событие - {inputs[19]}'
 
                                 ]} 
                             values={[
                                     'the weekly colloquium in mathematics department ','to learn about developments in mathematics outside of their own area',
+                                    'an opportunity for faculty and students',
                                     'succeed in enlightening the audience','extremely knowledgeable and enthusiastic about their subject',
                                     'not to address the real audience in the room, but an imaginary audience','know all the terminology in the field',
                                     'remember the meaning of all the symbols introduced by the speaker','follow complicated arguments and calculations on the board with ease',
+                                    'to have a general mathematical education',
                                     'two years of graduate study in algebra, analysis, geometry, and topology','particular branch of mathematics',
                                     'irrelevant to the problem',
                                     'communicate successfully with the real audience',

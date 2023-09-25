@@ -81,7 +81,12 @@ export const Units = () => {
             <Col>
                 <div className='unit-in-handler'>
                     <h3 className='unit-title'>Unit 4 | Why Don’t the Mathematicians Learn to Speak?</h3>
-                    <a className='button' href='#/unit4'><p>GO TO TASKS</p></a>
+                    <div className="unit-in-handler-buttons">
+                        <a className='button' onClick={()=>handleButtonClick(1,4)} href='#/unit4'><p>Task 1</p></a>
+                        <a className='button' onClick={()=>handleButtonClick(2,4)} href='#/unit4'><p>Task 2</p></a>
+                        <a className='button' onClick={()=>handleButtonClick(3,4)} href='#/unit4'><p>Task 3</p></a>
+                        <a className='button' onClick={()=>handleButtonClick(4,4)} href='#/unit4'><p>Task 4</p></a>
+                    </div>
                 </div>
             </Col> 
         </Row> 
