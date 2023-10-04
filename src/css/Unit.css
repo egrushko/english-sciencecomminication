@@ -39,6 +39,7 @@
     font-weight: 400;
     color: #0033ab;
     transition: .3s;
+    cursor: pointer;
   }
   
   .unit-button:hover{
@@ -74,9 +75,12 @@
     align-self: center;
     align-items: center;
     color: #275DAD;
-    width: 30vw;
+    width: 40vw;
     padding-left: 2vw;
     justify-content: space-between;
+    position: relative;
+    top: -6vh;
+    height: 0;
   }
 
   .task-change-button{
@@ -87,6 +91,12 @@
     font-size: 1.5vw;
     color: #275DAD;
     padding: 1vw 1vw;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .task-change-button:hover{
+    background-color: #d3d1d2;
   }
 
   .task-change-next{

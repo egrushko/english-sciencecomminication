@@ -53,12 +53,14 @@
     min-width: 50vw;
     text-align: left;
     justify-content: space-between;
+    flex: 1;
+
 }
 
 .compareinline-selector-answers .form-control{
     background-color: #FCF7F8;
     padding: 0.3vw;
-    width: 35vw;
+width: 100%;
     border-radius: 1vw;
     border-color: transparent;
     font-size: 1.2vw;
@@ -83,7 +85,7 @@
 }
 
 .compareinline-selector-answers p{
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-weight: 800;
     min-width: 12vw;
     text-align: left;
@@ -134,4 +136,8 @@
     display: flex;
     justify-content: space-evenly;
     gap:1vw;
+}
+
+.compare-task .text-container{
+    margin-bottom: 2vh;
 }

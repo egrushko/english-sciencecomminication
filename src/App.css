@@ -28,6 +28,10 @@ p{
   line-height: 2vw;
 }
 
+.form-control{
+  white-space: pre-wrap;
+}
+
 h1{
   font-size: 2vw;
 }
@@ -125,6 +129,7 @@ video {
   border-radius: 1vw;
   color: #275DAD ;
   transition: .3s;
+  cursor: pointer;
 }
 
 .check-button:hover{
@@ -214,6 +219,11 @@ video {
 iframe{
   margin-left: 5vw;
   align-self: center;
+}
+
+.select{
+  width: auto;
+  flex-grow: 1;
 }
 /*
 #5B616A текст

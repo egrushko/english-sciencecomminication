@@ -80,7 +80,7 @@ export const FirstUnit = () =>{
                 'an idea which is suggested as a possible way of explaining facts, proving an argument etc.',
                 'a drawing, such as a curved line, which shows how different values are related to each other',
                 'one of the parts of a book, paper, website, etc. that deals with a particular subject',
-                'a large amount of information stored in a computer system in such a way that it can be easily looked at',
+                "a large amount of information stored in a computer system in such a way that it can be easily looked at\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
                 'information, especially facts or numbers, collected to be examined and used to help decision-making']}
             toCompare={['1. Format','2. Section','3. Heading','4. Data','5. Reference','6. Graph','7. Figure','8. Hypothesis','9. Technique','10. Database']}/>,
             <InputCheckTask startNum = {0}
