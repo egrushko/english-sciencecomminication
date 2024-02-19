@@ -13,14 +13,14 @@ import {TrueFalseTask} from '../Tasks/TrueFalseTask';
 import {ThirdUnitBigText} from  './ThirdUnitBigText.js'
 import {ImagesTask} from '../Tasks/ImagesTask.js'
 
-/*import video31 from '../../videos/video 3.1.mp4'*/
-/*import video32 from '../../videos/video 3.2.mp4'*/
-import sp1i1 from '../../img/unit3speaking1i1.png'
-import sp1i2 from '../../img/unit3speaking1i2.png'
-import sp1i3 from '../../img/unit3speaking1i3.png'
-import sp1i4 from '../../img/unit3speaking1i4.png'
-import sp1i5 from '../../img/unit3speaking1i5.png'
-import sp1i6 from '../../img/unit3speaking1i6.png'
+import video31 from '../../videos/video 3.1.mp4'
+import video32 from '../../videos/video 3.2.mp4'
+import u3s11 from '../../videos/u3s11.mkv'
+import u3s12 from '../../videos/u3s12.mkv'
+import u3s13 from '../../videos/u3s13.mkv'
+import u3s14 from '../../videos/u3s14.mkv'
+import u3s15 from '../../videos/u3s15.mkv'
+import u3s16 from '../../videos/u3s16.mkv'
 
 import speaking from '../../img/speaking3.png'
 
@@ -216,7 +216,7 @@ export const ThirdUnit = () => {
                             type={
                                 [
                                     <TrueFalseTask helpText='As you watch the video mark (T) the points discussed in the video and mark (F) the points not discussed in the video.'
-                                    video={''}
+                                    video={video31}
                                     textTitle={''}
                                     startNum={0}
                                     statements={
@@ -265,15 +265,8 @@ export const ThirdUnit = () => {
                         helpText = {'Look at the real students presentations (A-F). Be ready to discuss in CLASS the following points:'}
                         type={[
                             <ImagesTask
-                                images={[sp1i1,sp1i2,sp1i3,sp1i4,sp1i5,sp1i6]}
+                                images={[u3s11,u3s12,u3s13,u3s14,u3s15,u3s16]}
                                 useLetters
-                                links={[<iframe src="https://sfedu-my.sharepoint.com/personal/rrepin_sfedu_ru/_layouts/15/Doc.aspx?sourcedoc={b2448933-37de-4b40-910a-830abe33efdb}&amp;action=embedview&amp;wdAr=1.3333333333333333&amp;wdEaaCheck=0" width="1280px" height="720px" frameborder="0">Это внедренный файл <a target="_blank" href="https://office.com">Microsoft Office</a> на платформе <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>,
-                                <iframe src="https://sfedu-my.sharepoint.com/personal/rrepin_sfedu_ru/_layouts/15/Doc.aspx?sourcedoc={be4b1d3a-7952-4374-a286-f1a06e7ffbcd}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="1280px" height="720px" frameborder="0">Это внедренный файл <a target="_blank" href="https://office.com">Microsoft Office</a> на платформе <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>,
-                                <iframe src="https://sfedu-my.sharepoint.com/personal/rrepin_sfedu_ru/_layouts/15/Doc.aspx?sourcedoc={3ba52980-e844-48d6-9673-d8f53282ebb7}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="1280px" height="720px" frameborder="0">Это внедренный файл <a target="_blank" href="https://office.com">Microsoft Office</a> на платформе <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>,
-                                <iframe src="https://sfedu-my.sharepoint.com/personal/rrepin_sfedu_ru/_layouts/15/Doc.aspx?sourcedoc={d5acffb9-ace9-4b75-b386-3766e62ba5f3}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="1280px" height="720px" frameborder="0">Это внедренный файл <a target="_blank" href="https://office.com">Microsoft Office</a> на платформе <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>,
-                                <iframe src="https://sfedu-my.sharepoint.com/personal/rrepin_sfedu_ru/_layouts/15/Doc.aspx?sourcedoc={47c4bb36-f4c1-4b70-a133-fb0e5d07434a}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="1280px" height="720px" frameborder="0">Это внедренный файл <a target="_blank" href="https://office.com">Microsoft Office</a> на платформе <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>,
-                                <iframe src="https://sfedu-my.sharepoint.com/personal/rrepin_sfedu_ru/_layouts/15/Doc.aspx?sourcedoc={03e02a0b-07ed-4342-889a-139eedd49894}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="1280px" height="720px" frameborder="0">Это внедренный файл <a target="_blank" href="https://office.com">Microsoft Office</a> на платформе <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>,
-                            ]}
                                 helpText={''}
                                 text={['• Does each slide show have a clear visual message? Is it possible to reconstruct the verbal part of each slide in presentations?','• What are the strong sides of each slide show? And what could or should be improved? Why?','• Have you got an experience of making presentations on the similar topics in different years of your study?']}
                             />
@@ -320,7 +313,7 @@ export const ThirdUnit = () => {
                                     type={'text'} 
                                     contType='none'
                                     useNums
-                                    video={''}
+                                    video={video32}
                                     textTitle="Creative Presentation Ideas"
                                     text={
                                         [

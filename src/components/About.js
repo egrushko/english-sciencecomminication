@@ -1,4 +1,18 @@
 import { useState,useEffect } from 'react';
+import p710 from "../pdf/p10.pdf"
+import p511 from "../pdf/p11.pdf"
+import p12 from "../pdf/p12.pdf"
+import p14 from "../pdf/p14.pdf"
+import p15 from "../pdf/p15.pdf"
+import p13 from "../pdf/p17.pdf"
+import p1 from "../pdf/paper1.pdf"
+import p2 from "../pdf/paper2.pdf"
+import p3 from "../pdf/paper3.pdf"
+import p4 from "../pdf/paper4.pdf"
+import p6 from "../pdf/u1r3p3.pdf"
+import p8 from "../pdf/u1r3p5.pdf"
+import p9 from "../pdf/p9.pdf"
+
 export const About = ()=>{
     const [ind,setInd] = useState(0);
     useEffect(() => {
@@ -17,14 +31,14 @@ export const About = ()=>{
     return(
         <>
         <div className='unit-buttons'>
-            <button className={ind===0?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(0)}>Об учебном ресурсе</button>
-            <button className={ind===1?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(1)}>Об авторе</button>
-            <button className={ind===2?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(2)}>Перечень использованных интернет-ресурсов</button>
+            <button className={ind===0?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(0)}>About this online resource</button>
+            <button className={ind===1?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(1)}>About the author</button>
+            <button className={ind===2?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(2)}>References</button>
         </div>
         <div className="page">
             <div className={ind===0?'unit-task-active':'unit-task-unactive'}>
                 <h1 className="page-title">
-                    Об учебном ресурсе
+                About this online resource
                 </h1>
                 <p>
                 Данное учебное пособие реализовано в форме Web-сайта. 
@@ -43,10 +57,10 @@ export const About = ()=>{
                 <p className="page-table">
                 Данное учебное пособие включает 4 раздела:
                 <ol>
-                    <ul>• Unit 1 – What is the structure of a scientific paper?</ul>
-                    <ul>• Unit 2 – How to read a scientific paper?</ul>
-                    <ul>• Unit 3 – Improving Power Point Presentations</ul>
-                    <ul>• Unit 4 – Why Don’t the Mathematicians Learn to Speak?</ul> 
+                    <ul><p className="page-title">Unit 1 | What is the structure of a scientific paper?</p></ul>
+                    <ul><p className="page-title">Unit 2 | How to read a scientific paper?</p></ul>
+                    <ul><p className="page-title">Unit 3 | Improving Power Point Presentations</p></ul>
+                    <ul><p className="page-title">Unit 4 | Why Don’t the Mathematicians Learn to Speak?</p></ul> 
                 </ol>
                 </p>
                 <p>
@@ -55,7 +69,7 @@ export const About = ()=>{
             </div>
             <div className={ind===1?'unit-task-active':'unit-task-unactive'}>
             <h1 className="page-title">
-                Об авторе
+            About the author
             </h1>
             <p className="about-title">
                 Грушко Елена Ивановна
@@ -89,26 +103,26 @@ export const About = ()=>{
             </div>
             <div className={ind===2?'unit-task-active':'unit-task-unactive'}>
             <h1 className="page-title">
-                Перечень использованных интернет-ресурсов
+                References
             </h1>
             <p className="about-title">
                 Research papers
             </p>
             <ol>
-                <ul>[1] W. Pazner, N. Trask, P.J. Atzberger, Stochastic Discontinuous Galerkin Methods (SDGM) based on fluctuation-dissipation balance, Results in Applied Mathematics, Volume 4, 2019, 100068, ISSN 2590-0374, https://doi.org/10.1016/j.rinam.2019.100068. </ul>
-                <ul>[2] R. Picelli, S. Townsend, C. Brampton, J. Norato, H.A. Kim, Stress-based shape and topology optimization with the level set method, Computer Methods in Applied Mechanics and Engineering, Volume 329, 2018, Pages 1-23, ISSN 0045-7825, https://doi.org/10.1016/j.cma.2017.09.001. </ul>
-                <ul>[3] Torrey Trust, Daniel G. Krutka, Jeffrey Paul Carpenter, “Together we are better”: Professional learning networks for teachers, Computers & Education, Volume 102, 2016, Pages 15-34, ISSN 0360-1315, https://doi.org/10.1016/j.compedu.2016.06.007. </ul>
-                <ul>[4] Laura Rebollo-Neira, Daniel Whitehouse, Sparse representation of 3D images for piecewise dimensionality reduction with high quality reconstruction, Array, Volumes 1-2, 2019, 100001, ISSN 2590-0056, https://doi.org/10.1016/j.array.2019.100001. </ul>
-                <ul>[5] Bryan Ek, Caitlin VerSchneider, Darren A. Narayan, Global efficiency of graphs, AKCE International Journal of Graphs and Combinatorics, Volume 12, Issue 1, 2015, Pages 1-13, ISSN 0972-8600, https://doi.org/10.1016/j.akcej.2015.06.001. </ul>
-                <ul>[6] Walt Scacchi, Free/Open Source Software Development: Recent Research Results and Methods, Editor(s): Marvin V. Zelkowitz, Advances in Computers, Elsevier, Volume 69, 2007, Pages 243-295, ISSN 0065-2458, ISBN 9780123737458, https://doi.org/10.1016/S0065-2458(06)69005-0. </ul>
-                <ul>[7],[10] Michael Coblenz, Jonathan Aldrich, Brad A. Myers, and Joshua Sunshine, Interdisciplinary programming language design. In Proceedings of the 2018 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward! 2018). ACM, New York, NY, USA, 133-146, https://doi.org/10.1145/3276954.3276965. </ul>
-                <ul>[8] Konrad Werys, Iulius Dragonu, Qiang Zhang, Iulia Popescu, Evan Hann, Henrike Puchta, Agata Kubik, Dogan Polat, Cody Wu, Niall O. Moon, Ahmet Barutcu, Vanessa M. Ferreira, Stefan K. Piechnik, Total Mapping Toolbox (TOMATO): An open source library for cardiac magnetic resonance parametric mapping, SoftwareX, Volume 11, 2020, 100369, ISSN 2352-7110, https://doi.org/10.1016/j.softx.2019.100369 </ul>
-                <ul>[9] Coveney PV, Dougherty ER, Highfield RR. 2016 Big data need big theory too. Phil. Trans. R. Soc. A 374: 20160153. http://dx.doi.org/10.1098/rsta.2016.0153 </ul>
-                <ul>[11] Bryan Ek, Caitlin VerSchneider, Darren A. Narayan Global efficiency of graphs, AKCE International Journal of Graphs and Combinatorics 12 (2015) 1–13 </ul>
-                <ul>[12] Ivor Grattan-Guinness A Sideways Look at Hilbert’s Twenty-three Problems of 1900, Notices of the AMS, volume 47, number 7, August 2000 </ul>
-                <ul>[13] Brenda Justine Mallinson A Prototype Live Virtual Classroom for Shared Tertiary Instruction Conference paper, Conference: Advanced Learning Technologies, 2007. ICALT 2007. </ul>
-                <ul>[14] Carina Curto What can topology tell us about the neural code? Bulletin (New Series) of the American Mathematical Society Volume 54, Number 1, January 2017, Pages 63–78 http://dx.doi.org/10.1090/bull/1554 </ul>
-                <ul>[15] A.B. Kudimova, D.K. Nadolin, A.V. Nasedkin, P.A. Oganesyan, A.N. Soloviev Finite element homogenization models of bulk mixed piezocomposites with granular elastic inclusions in ACELAN package, Materials Physics and Mechanics 37 (2018) 25-3 3http://dx.doi.org/10.18720/MPM.3712018_4</ul>
+                <ul><a className='link' href={p1} target='_blank' rel='noopener noreferrer'>[1]</a> W. Pazner, N. Trask, P.J. Atzberger, Stochastic Discontinuous Galerkin Methods (SDGM) based on fluctuation-dissipation balance, Results in Applied Mathematics, Volume 4, 2019, 100068, ISSN 2590-0374, https://doi.org/10.1016/j.rinam.2019.100068. </ul>
+                <ul><a className='link' href={p2} target='_blank' rel='noopener noreferrer'> [2]</a> R. Picelli, S. Townsend, C. Brampton, J. Norato, H.A. Kim, Stress-based shape and topology optimization with the level set method, Computer Methods in Applied Mechanics and Engineering, Volume 329, 2018, Pages 1-23, ISSN 0045-7825, https://doi.org/10.1016/j.cma.2017.09.001. </ul>
+                <ul><a className='link' href={p3} target='_blank' rel='noopener noreferrer'> [3]</a> Torrey Trust, Daniel G. Krutka, Jeffrey Paul Carpenter, “Together we are better”: Professional learning networks for teachers, Computers & Education, Volume 102, 2016, Pages 15-34, ISSN 0360-1315, https://doi.org/10.1016/j.compedu.2016.06.007. </ul>
+                <ul><a className='link' href={p4} target='_blank' rel='noopener noreferrer'> [4]</a> Laura Rebollo-Neira, Daniel Whitehouse, Sparse representation of 3D images for piecewise dimensionality reduction with high quality reconstruction, Array, Volumes 1-2, 2019, 100001, ISSN 2590-0056, https://doi.org/10.1016/j.array.2019.100001. </ul>
+                <ul><a className='link' href={p511} target='_blank' rel='noopener noreferrer'> [5]</a> Bryan Ek, Caitlin VerSchneider, Darren A. Narayan, Global efficiency of graphs, AKCE International Journal of Graphs and Combinatorics, Volume 12, Issue 1, 2015, Pages 1-13, ISSN 0972-8600, https://doi.org/10.1016/j.akcej.2015.06.001. </ul>
+                <ul><a className='link' href={p6} target='_blank' rel='noopener noreferrer'> [6]</a> Walt Scacchi, Free/Open Source Software Development: Recent Research Results and Methods, Editor(s): Marvin V. Zelkowitz, Advances in Computers, Elsevier, Volume 69, 2007, Pages 243-295, ISSN 0065-2458, ISBN 9780123737458, https://doi.org/10.1016/S0065-2458(06)69005-0. </ul>
+                <ul><a className='link' href={p710} target='_blank' rel='noopener noreferrer'> [7],[10]</a> Michael Coblenz, Jonathan Aldrich, Brad A. Myers, and Joshua Sunshine, Interdisciplinary programming language design. In Proceedings of the 2018 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward! 2018). ACM, New York, NY, USA, 133-146, https://doi.org/10.1145/3276954.3276965. </ul>
+                <ul><a className='link' href={p8} target='_blank' rel='noopener noreferrer'> [8]</a> Konrad Werys, Iulius Dragonu, Qiang Zhang, Iulia Popescu, Evan Hann, Henrike Puchta, Agata Kubik, Dogan Polat, Cody Wu, Niall O. Moon, Ahmet Barutcu, Vanessa M. Ferreira, Stefan K. Piechnik, Total Mapping Toolbox (TOMATO): An open source library for cardiac magnetic resonance parametric mapping, SoftwareX, Volume 11, 2020, 100369, ISSN 2352-7110, https://doi.org/10.1016/j.softx.2019.100369 </ul>
+                <ul><a className='link' href={p9} target='_blank' rel='noopener noreferrer'> [9]</a> Antonia Creswell, Tom White, Vincent Dumoulin, Kai Arulkumaran, Biswa Sengupta Generative Adversarial Networks: An Overview </ul>
+                <ul><a className='link' href={p511} target='_blank' rel='noopener noreferrer'> [11]</a> Bryan Ek, Caitlin VerSchneider, Darren A. Narayan Global efficiency of graphs, AKCE International Journal of Graphs and Combinatorics 12 (2015) 1–13 </ul>
+                <ul><a className='link' href={p12} target='_blank' rel='noopener noreferrer'> [12]</a> Ivor Grattan-Guinness A Sideways Look at Hilbert’s Twenty-three Problems of 1900, Notices of the AMS, volume 47, number 7, August 2000 </ul>
+                <ul><a className='link' href={p13} target='_blank' rel='noopener noreferrer'> [13]</a>Fan Chung Graph Theory in the Information Age </ul>
+                <ul><a className='link' href={p14} target='_blank' rel='noopener noreferrer'> [14]</a> Carina Curto What can topology tell us about the neural code? Bulletin (New Series) of the American Mathematical Society Volume 54, Number 1, January 2017, Pages 63–78 http://dx.doi.org/10.1090/bull/1554 </ul>
+                <ul><a className='link' href={p15} target='_blank' rel='noopener noreferrer'> [15]</a> A.B. Kudimova, D.K. Nadolin, A.V. Nasedkin, P.A. Oganesyan, A.N. Soloviev Finite element homogenization models of bulk mixed piezocomposites with granular elastic inclusions in ACELAN package, Materials Physics and Mechanics 37 (2018) 25-3 3http://dx.doi.org/10.18720/MPM.3712018_4</ul>
 
             </ol>
 
@@ -116,19 +130,19 @@ export const About = ()=>{
                 Video links
             </p>
             <ol>
-                <ul><a href="https://www.youtube.com/watch?v=BAS9I4tFgV8">The Structure of Scientific Research Papers                       </a></ul>
-                <ul><a href="https://www.youtube.com/watch?v=M3aZNaPY88Y">Efficient reading strategies</a></ul>
-                <ul><a href="https://www.youtube.com/watch?v=MjcO2ExtHso">Life After Death by PowerPoint (Corporate Comedy Video) </a></ul>
-                <ul><a href="https://www.youtube.com/watch?v=BuB7IhWZnJs">31 Creative Presentation Ideas to Delight Your Audience </a></ul>
-                <ul><a href="https://www.youtube.com/watch?v=TmbQFWBvTtY">Body Language for Presentations  </a></ul>
-                <ul><a href="https://www.youtube.com/watch?v=Q5WT2vweFRY">Presenting and Public Speaking Tips - how to improve skills & confidence  </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=BAS9I4tFgV8">The Structure of Scientific Research Papers                       </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=M3aZNaPY88Y">Efficient reading strategies</a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=MjcO2ExtHso">Life After Death by PowerPoint (Corporate Comedy Video) </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=BuB7IhWZnJs">31 Creative Presentation Ideas to Delight Your Audience </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=TmbQFWBvTtY">Body Language for Presentations  </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=Q5WT2vweFRY">Presenting and Public Speaking Tips - how to improve skills & confidence  </a></ul>
             </ol>
 
             <p className="about-title">
                 Illustrations
             </p>
             <ol>
-                <ul><a href="https://undraw.co/search">from Open-source illustrations</a></ul>
+                <ul><a className='link' href="https://undraw.co/search">from Open-source illustrations</a></ul>
             </ol>
             </div>
         </div>

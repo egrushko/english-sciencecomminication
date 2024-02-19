@@ -49,34 +49,93 @@ export const InputField = ({savedValue,idi,index,bools,placeholder,useInputLengt
         var ilength = 0;
         for(let i = 0;i<input.length;i++)
         {
-          if(input[i].toLowerCase()!=input[i].toUpperCase()&&input[i]===input[i].toUpperCase())
-            ilength+=0.2;
-          if(input[i]==='i'  || input[i]==='j')
-            ilength+=0.5;
-          else if(input[i]==='l')
-            ilength+=0.52;
-          else if(input[i]==='f')
-            ilength+=0.6;
-          else if( input[i]==='r'|| input[i]==='t')
-            ilength+=0.7;
-          else if(input[i]==='s'|| input[i]==='z')
-            ilength+=0.85;
-          else if(input[i]==='x'|| input[i]==='c')
-            ilength+=0.9;
-          else if(input[i]==='u' || input[i]==='o' || input[i]==='d' || input[i]==='h'|| input[i]==='b'|| input[i]==='n')
-            ilength+=1.1;
-          else if(input[i]==='q' || input[i]==='p' )
-            ilength+=1.15;
-          else if(input[i]==='w')
-            ilength+=1.5;
-          else if(input[i]==='m')
-            ilength+=1.7;
-          else if(input[i]===' ')
-            ilength+=0.405;
-          else
-            ilength+=1;
+          const symb = input[i].toLowerCase();
+          const isSame = symb==input[i];
+          switch(symb){
+              case "a":
+                ilength+=isSame?1.02:1.1;
+              break;
+              case "b":
+                ilength+=isSame?1.115:1.195;
+              break;
+              case "c":
+                ilength+=isSame?0.88:1.1;
+              break;
+              case "d":
+                ilength+=isSame?1.125:1.25;
+              break;
+              case "e":
+                ilength+=isSame?1:1.08;
+              break;
+              case "f":
+                ilength+=isSame?0.585:1;
+              break;
+              case "g":
+                ilength+=isSame?1.02:1.25;
+              break;
+              case "h":
+                ilength+=isSame?1.11:1.32;
+              break;
+              case "i":
+                ilength+=isSame?0.505:0.53;
+              break;
+              case "j":
+                ilength+=isSame?0.51:0.92;
+              break;
+              case "k":
+                ilength+=isSame?1:1.18;
+              break;
+              case "l":
+                ilength+=isSame?0.55:0.985;
+              break;
+              case "m":
+                ilength+=isSame?1.75:1.5;
+              break;
+              case "n":
+                ilength+=isSame?1.15:1.325;
+              break;
+              case "o":
+                ilength+=isSame?1.1:1.36;
+              break;
+              case "p":
+                ilength+=1.15;
+              break;
+              case "q":
+                ilength+=isSame?1.15:1.35;
+              break;
+              case "r":
+                ilength+=isSame?0.75:1.15;
+              break;
+              case "s":
+                ilength+=isSame?0.85:1.06;
+              break;
+              case "t":
+                ilength+=isSame?0.68:1.1;
+              break;
+              case "u":
+                ilength+=isSame?1.1:1.3;
+              break;
+              case "v":
+                ilength+=isSame?0.95:1.06;
+              break;
+              case "w":
+                ilength+=isSame?1.45:1.6;
+              break;
+              case "x":
+                ilength+=isSame?0.93:1.05;
+              break;
+              case "y":
+                ilength+=isSame?0.945:0.98;
+              break;
+              case "z":
+                ilength+=isSame?0.87:1.06;
+              break;
+              default:
+                ilength+=0.405;
+              break;
+          }
         }
-        loc.style.width = ilength + 1 + 'ch';
+        loc.style.width = ilength + 'ch';
       }
       else
         loc.style.width = '5vw';

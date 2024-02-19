@@ -6,7 +6,7 @@ import { CheckWindow } from '../TasksUtils/CheckWindow';
 import {Video} from '../TasksUtils/Video'
 
 
-export const InputCheckTask = ({video,values,text,baseText,type,useAB,helpText,contType,justText,placeholders,startNum,textTitle,useNums,useInputLength}) => {
+export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,useAB,helpText,contType,justText,placeholders,startNum,textTitle,useNums,useInputLength}) => {
   const reactStringReplace = require('react-string-replace');
   const [bools,setBools] = useState(Array(values.length).fill(false));
   const [check,setCheck] = useState(null);
@@ -17,6 +17,20 @@ export const InputCheckTask = ({video,values,text,baseText,type,useAB,helpText,c
   {
       for(let j =0; j<text.length;j++)
         text[j] = reactStringReplace(text[j],changers[i][0],()=>(useNums?<span className='bold'>({i+1})  {changers[i][1]}</span>:changers[i][1]));
+  }
+
+  if(toBold)
+  for(let i =0; i<toBold.length;i++){
+    for(let j =0; j<text.length;j++){
+      text[j] = reactStringReplace(text[j],toBold[i],(x)=>(x===toBold[i]?<span className='bold'>{toBold[i]}</span>:x));
+    }
+  }
+
+  if(links){
+    for(let i =0; i<links.length;i++){
+      for(let j =0; j<text.length;j++)
+        text[j] = reactStringReplace(text[j],links[i][0],()=>(<a href={links[i][1]} target='_blank' rel='noopener noreferrer'>{links[i][0]}</a>));
+    }
   }
   
   if(type==='words')
@@ -57,7 +71,7 @@ export const InputCheckTask = ({video,values,text,baseText,type,useAB,helpText,c
         {type==='text'?<TextContainer title= {textTitle}  justText={true} text={baseText}/>:''}
         {type==='line'?<div className={'input-line-type'}>{line}</div>:''}</>:''
         }
-        <TextContainer title= {textTitle} justText={justText} type = {contType} text={text}/>
+       <TextContainer title= {textTitle} justText={justText} type = {contType} text={text}/>
         <button onClick={()=>getScore()} className='check-button'>Check</button>
         {check!==null?check:""}
     </div>

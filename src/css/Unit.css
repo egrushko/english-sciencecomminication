@@ -75,11 +75,11 @@
     align-self: center;
     align-items: center;
     color: #275DAD;
-    width: 40vw;
-    padding-left: 2vw;
+    width:80vw;
+    padding:0 2vw;
     justify-content: space-between;
     position: relative;
-    top: -6vh;
+    top: -6.4vh;
     height: 0;
   }
 
