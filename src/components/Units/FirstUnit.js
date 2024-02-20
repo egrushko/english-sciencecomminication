@@ -251,8 +251,8 @@ export const FirstUnit = () =>{
                 ]}
               />}/>,
               <Task 
-            title='Video 1.2'
-            helpText={'Watch the video to compare and contrast the information about different sections of a research paper with the description of the same sections in the text below.\nTake notes and be ready to briefly describe IN CLASS the mission of each section of a research paper.'}
+            title='Video 1.1'
+            helpText={'TODOWatch the video to compare and contrast the information about different sections of a research paper with the description of the same sections in the text below.\nTake notes and be ready to briefly describe IN CLASS the mission of each section of a research paper.'}
             type={
             <VideoShow 
                 video={video2}  
