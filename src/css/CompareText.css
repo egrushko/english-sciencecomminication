@@ -63,7 +63,7 @@
 width: 100%;
     border-radius: 1vw;
     border-color: transparent;
-    font-size: 1.2vw;
+    font-size: 1.15vw;
     transition: .3s;
     color:#363a3f;
     font-weight: 400;
@@ -85,8 +85,8 @@ width: 100%;
 }
 
 .compareinline-selector-answers p{
-    font-size: 1.4vw;
-    font-weight: 800;
+    font-size: 1.05vw;
+    font-weight: 600;
     min-width: 12vw;
     text-align: left;
     color: #fff;

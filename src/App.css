@@ -28,9 +28,6 @@ p{
   line-height: 2vw;
 }
 
-.form-control{
-  white-space: pre-wrap;
-}
 
 h1{
   font-size: 2vw;
@@ -42,12 +39,12 @@ h3{
 }
 
 .select option p{
-  font-size: 1.5vw !important;
+  font-size: 1.1vw !important;
   width: auto !important;
 }
 
 option{
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   padding: 1vw;
 }
 
@@ -125,7 +122,7 @@ video {
   width: 10vw;
   font-size: 2vw;
   align-self: center;
-  margin-top: 2vw;
+  margin-top: 8vh;
   border-radius: 1vw;
   color: #275DAD ;
   transition: .3s;
@@ -162,7 +159,7 @@ video {
 }
 
 .input-words p {
-  font-size: 1.1vw !important;
+  font-size: 1.5vw !important;
   color: #363a3f;
   text-align: center;
   font-weight: 800;
@@ -213,7 +210,8 @@ video {
 }
 
 .image{
-  align-self: center;
+  justify-content: center;
+  display: flex;
 }
 
 iframe{
@@ -224,6 +222,15 @@ iframe{
 .select{
   width: auto;
   flex-grow: 1;
+  margin-left: 1vw;
+}
+
+p .page-title {
+  font-size: 1.5vw !important;
+}
+
+.link{
+  color: #275DAD !important;
 }
 /*
 #5B616A текст

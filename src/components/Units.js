@@ -86,6 +86,11 @@ export const Units = () => {
                         <a className='button' onClick={()=>handleButtonClick(2,4)} href='#/unit4'><p>Task 2</p></a>
                         <a className='button' onClick={()=>handleButtonClick(3,4)} href='#/unit4'><p>Task 3</p></a>
                         <a className='button' onClick={()=>handleButtonClick(4,4)} href='#/unit4'><p>Task 4</p></a>
+                        <a className='button' onClick={()=>handleButtonClick(5,4)} href='#/unit4'><p>Video 4.1</p></a>
+                        <a className='button' onClick={()=>handleButtonClick(6,4)} href='#/unit4'><p>Task 5</p></a>
+                        <a className='button' onClick={()=>handleButtonClick(7,4)} href='#/unit4'><p>Task 6</p></a>
+                        <a className='button' onClick={()=>handleButtonClick(8,4)} href='#/unit4'><p>Video 4.2</p></a>
+                        <a className='button' onClick={()=>handleButtonClick(9,4)} href='#/unit4'><p>Speaking</p></a>
                     </div>
                 </div>
             </Col> 

@@ -10,8 +10,12 @@ import {ThirdUnit} from './components/Units/ThirdUnit.js'
 import {FourthUnit} from './components/Units/FourthUnit.js'
 import {Routes,Route, BrowserRouter} from 'react-router-dom'
 
-function App() {
+import React, { useEffect } from 'react';
 
+function App() {
+  useEffect(() => {
+    document.title = 'English for Science';
+  }, []);
   return (
     <div className='App'>
       <NavBar/>
