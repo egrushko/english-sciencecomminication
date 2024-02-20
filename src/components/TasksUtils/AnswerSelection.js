@@ -1,54 +1,59 @@
-import { Form } from "react-bootstrap";
-import { useState } from "react";
+import { Select, Option } from '@mui/joy';
 
-export const AnswerSelection = ({answer,variants,booleans,index}) =>{
-    const [changed,setChange] = useState(false);
-    const options = Array(variants.length);
-    for(let i =0;i<variants.length;i++)
-        options[i]= <option><p>{variants[i]}</p></option>
-
-    if(Array.isArray(answer))
-        for(let i = 0; i<answer.length;i++)
-        {
-            if(answer[i]=='-')
+export const AnswerSelection = ({
+    answer,
+    variants,
+    booleans,
+    setBooleans,
+    index,
+    width
+}) =>{
+    if(Array.isArray(answer)) {
+        const tmpBooleans = [...booleans]
+        for(let i = 0; i<answer.length;i++){
+            if( answer[i] === null )
             {
-                booleans[index] = true;
+                tmpBooleans[index] = true;
                 break;
             }
             else
-            booleans[index] = false;
+            tmpBooleans[index] = false;
         }
+        setBooleans(tmpBooleans)
+    }
 
-    function handleCompareInput(event) {
-            if(!Array.isArray(answer))
-            {
-                if(answer===event.target.value)
-                    booleans[index] = true;
-                else
-                    booleans[index] = false;
+    function handleCompareInput(value) {
+        const tmpBooleans = [...booleans]
+        if(!Array.isArray(answer)){
+            if(answer === value) {
+                tmpBooleans[index] = true
+            } else {
+                tmpBooleans[index] = false
             }
-            else
-            {
-                for(let i = 0; i<answer.length;i++)
-                {
-                    if(answer[i]===event.target.value)
-                    {
-                        booleans[index] = true;
-                        break;
-                    }
-                    else
-                    booleans[index] = false;
+        } else {
+            for(let i = 0; i<answer.length;i++){
+                if(answer[i]===value){
+                    tmpBooleans[index] = true;
+                    break;
+                } else {
+                    tmpBooleans[index] = false;
                 }
             }
         }
+        setBooleans(tmpBooleans)
+    }
     return(
-        <div className="select">
-            <Form.Group>
-                <Form.Control as="select" onLoad={(event) => {handleCompareInput(event)}} onChange={(event) => {handleCompareInput(event);setChange(true)}}>
-                    {changed?'':<option disabled selected><p>-</p></option>}
-                    {options}
-                </Form.Control>
-            </Form.Group>
-        </div>
+        <Select 
+            sx={{ width: width, fontSize: 22 }}
+            onChange={(event, newValue) => {
+                event.preventDefault()
+                handleCompareInput(newValue)
+            }}
+            placeholder='-'
+        >
+            {variants.map((variant,i) => (
+                <Option value={variant} sx={{ fontSize: 22 }}>{variant || '-'}</Option>
+            ))}
+        </Select>
     )
 }

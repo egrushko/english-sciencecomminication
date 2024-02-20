@@ -8,9 +8,14 @@ import { CheckWindow } from '../TasksUtils/CheckWindow';
 export const TwoColumnInputTask = ({values,text,baseText,type,useAB,helpText,contType,justText,placeholders,startNum}) => {
   const reactStringReplace = require('react-string-replace');
   const [bools,setBools] = useState(Array(values.length).fill(false));
+  function mutateBool(mutateIndex, value) {
+    setBools(prev => prev.map((bool, currenIndex) => {
+      return currenIndex === mutateIndex ? value : bool
+    }))
+  }
   const [check,setCheck] = useState(null);
 
-  const inputs = Array.from({length:values.length},(_,i)=><InputField placeholder={''} idi={'inp'+ i + values.length + Math.random()} index = {i} savedValue={values[i]} bools={bools}/>);
+  const inputs = Array.from({length:values.length},(_,i)=><InputField placeholder={''} idi={'inp'+ i + values.length + Math.random()} index = {i} savedValue={values[i]} bools={bools} mutateBool={mutateBool}/>);
   const inputWithWords = Array.from(values.length)
   const changers = Array.from({length:values.length},(_,i)=>["{inputs["+i+"]}",inputs[i]]);
   for(let i =0;i<changers.length;i++)

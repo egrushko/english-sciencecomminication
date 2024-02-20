@@ -9,7 +9,6 @@ export const CompareTextTask = ({textType,headings,answers,rightAnswers,collage,
     const [bools,setBools] = useState(Array(rightAnswers.length).fill(false));
     const letters = answers;
     const [check,setCheck] = useState(null);
-
     if(!collage)
         for(let i = 0; i<letters.length;i++)
             letters[i] = String.fromCharCode(65+i);
@@ -37,7 +36,14 @@ export const CompareTextTask = ({textType,headings,answers,rightAnswers,collage,
             dropDowns[i] = 
             <div className='collage-block'>
                 <div className='collage-answers'>
-                    <AnswerSelection index={i} booleans={bools} answer={rightAnswers[i]} variants={letters}/>
+                    <AnswerSelection 
+                        index={i} 
+                        booleans={bools} 
+                        answer={rightAnswers[i]} 
+                        setBooleans={setBools}
+                        variants={letters}
+                        width={800}
+                    />
                 </div>
                 <div className='collage-text'>
                     <p>{headings[i]}</p>
@@ -50,7 +56,7 @@ export const CompareTextTask = ({textType,headings,answers,rightAnswers,collage,
         {
         dropDowns[i] = <div className='compare-selector-answers'>
                             <p>{toCompare[i]}</p>
-                            <AnswerSelection index={i} booleans={bools} answer={rightAnswers[i]} variants={letters}/>  
+                            <AnswerSelection index={i} booleans={bools} setBooleans={setBools} answer={rightAnswers[i]} variants={letters}/>  
                         </div>;
         }
     }

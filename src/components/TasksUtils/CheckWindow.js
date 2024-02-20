@@ -4,7 +4,7 @@ import {X} from 'react-bootstrap-icons'
 export const CheckWindow = ({bools,score,cont,letters,ab,startNum}) =>{
     const results = Array(bools.length);
     function clickHandler(){
-        cont(null);
+        cont(false);
     }
     for(let i = 0;i<bools.length;i++)
     {

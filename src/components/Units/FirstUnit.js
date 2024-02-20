@@ -3,7 +3,7 @@ import {Task} from '../Task'
 import {InlineCompareTask} from '../Tasks/InlineCompareTest'
 import { TwoColumnsCompareTask } from '../Tasks/TwoColumnsCompareTask';
 import {ColumnInlineCompare} from '../Tasks/ColumnInlineCompare';
-import { InputCheckTask } from '../Tasks/InputCheckTask';
+import { InputCheckTask } from '../Tasks/input-check-task';
 import {CompareTextTask} from '../Tasks/CompareTextTask';
 import {TwoColumnInputTask} from '../Tasks/TwoColumnInputTask'
 import {TwoColumnsTextShow} from '../Tasks/TwoColumnsTextShow'
@@ -39,8 +39,8 @@ export const FirstUnit = () =>{
           papers={[u1t1p1,u1t1p2,u1t1p3]}  
           baseText={["                                                                      What is the structure of a scientific paper?","\nAll scientific papers have the same general format. They  are  divided  into  distinct  sections  and  each section  contains  a  specific  type  of  information.  The number and the headings of sections may vary among journals,  but  for  the  most  part  a basic  structure  is  maintained.\nTypically,  scientific  papers  are comprised of the following parts: \n\n              1. Title                                                                 4. Introduction                                        8. Acknowledgments (optional)\n              2. Abstract                                                         5. Methods                                                9. References / Bibliography\n              3. Authors and affiliations                          6. Results                                                 10. Appendix / Appendices (optional)\n                                                                                             7. Discussion \n\nLook at some research papers and the sections that they include.","\nBecause  scientific  papers  are  organized  in  this  way, readers  know  what  to  expect  from  each  part  of  the paper,  and  they  can  quickly  locate  a  specific  type  of information. \nLet’s examine the content in each section of a scientific paper, and discuss why each section may be useful to you as a reader."]}
           collage={true} 
-          answers={['Title','Abstract','Authors and affiliations','Introduction','Methods','Results','Discussion','Acknowledgments','References','Appendix / Appendices','Extra paragraph']}
-          rightAnswers={['Results','Introduction','Discussion','Title','Methods','Appendix / Appendices','References','Abstract',['Extra paragraph','-'],'Acknowledgments','Authors and affiliations']} 
+          answers={[null,'Title','Abstract','Authors and affiliations','Introduction','Methods','Results','Discussion','Acknowledgments','References','Appendix / Appendices']}
+          rightAnswers={['Results','Introduction','Discussion','Title','Methods','Appendix / Appendices','References','Abstract',null,'Acknowledgments','Authors and affiliations']} 
                 headings={[
             'A. This  section  contains  the  data  collected  during experimentation. It is the heart of a scientific paper. In  this  section,  much  of  the  important  information may  be  in  the  form  of  tables  and  graphs.  When reading  this  section,  do  not  readily  accept  the author’s  statements  about  the  findings.  Rather, carefully analyze the raw data in tables and figures to draw your own conclusions.',
             'B. You   will   find background  information  and  a  statement  of  the author’s  hypothesis  in  this  section.  It  usually describes the theoretical background, indicates why the  work  is  important,  states  a  specific research  question,  and  poses  a  specific hypothesis to be tested.',
@@ -80,7 +80,7 @@ export const FirstUnit = () =>{
                 'an idea which is suggested as a possible way of explaining facts, proving an argument etc.',
                 'a drawing, such as a curved line, which shows how different values are related to each other',
                 'one of the parts of a book, paper, website, etc. that deals with a particular subject',
-                "a large amount of information stored in a computer system in such a way that it can be easily looked at\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+                "a large amount of information stored in a computer system in such a way that it can be easily looked at",
                 'information, especially facts or numbers, collected to be examined and used to help decision-making']}
             toCompare={['1. Format','2. Section','3. Heading','4. Data','5. Reference','6. Graph','7. Figure','8. Hypothesis','9. Technique','10. Database']}/>,
             <InputCheckTask startNum = {0}

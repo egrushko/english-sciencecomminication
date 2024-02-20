@@ -15,7 +15,7 @@ export const ColumnInlineCompare = ({answers,rightAnswers,toCompare,papers,baseT
         dropDowns[i] = <div className='compare-selector-answers'>
                             <p>{toCompare[i]}</p>
                             {useMultiple?<MultipleSelect index={i} booleans={bools} answers={rightAnswers[i]} variants={letters}/>:
-                             <AnswerSelection index={i} booleans={bools} answer={rightAnswers[i]} variants={letters}/>}  
+                             <AnswerSelection index={i} booleans={bools} setBooleans={setBools} answer={rightAnswers[i]} variants={letters}/>}  
                         </div>;
         }
     

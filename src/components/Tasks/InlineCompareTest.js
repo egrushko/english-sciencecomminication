@@ -5,41 +5,40 @@ import { TextContainer } from '../TasksUtils/TextContainer';
 import { useState } from 'react';
 
 export const InlineCompareTask = ({answers,rightAnswers,toCompare,helpText,startNum,baseText}) => {
-    const dropDowns = Array(toCompare.length);
     const [bools,setBools] = useState(Array(toCompare.length).fill(false));
-    const [check,setCheck] = useState(null);
-    
-    for(let i = 0; i<toCompare.length;i++)
-        {
-        dropDowns[i] = <div className='compareinline-selector-answers'>
-                            <p>{toCompare[i]}</p>
-                            <AnswerSelection index={i} booleans={bools} answer={rightAnswers[i]} variants={Array.isArray(answers[i])?answers[i]:answers}/>  
-                        </div>;
-        }
+    const [score,setScore] = useState(null);
 
-    
-
-    function getScore()
-    {
+    function getScore(){
         var s = 0;
         bools.forEach(b => {
         if(b) s++
         });
-        setCheck(<CheckWindow  startNum={startNum} bools={bools} score={s} cont={setCheck}/>);
+        setScore(<CheckWindow  startNum={startNum} bools={bools} score={s} cont={setScore}/>);
     }
 
     return(
         <div className="compare-task">
-            {helpText!==''?
+            {!!helpText && 
                 <span className = "task-explanation">
-                    <p>
-                        {helpText}
-                    </p>
-                </span>:''}
-            {check}
+                    <p>{helpText}</p>
+                </span>
+            }
+            {score}
             {baseText?<TextContainer title= {''} type={'text'}  justText={true} text={baseText}/>:''}
             <div className = {"compare-answers-inline"}>
-                {dropDowns}
+                {toCompare.map((compareBlock, i) => (
+                    <div className='compareinline-selector-answers'>
+                        <p>{compareBlock}</p>
+                        <AnswerSelection 
+                            index={i} 
+                            booleans={bools} 
+                            setBooleans={setBools}
+                            answer={rightAnswers[i]} 
+                            variants={Array.isArray(answers[i]) ? answers[i] : answers}
+                            width={1000}
+                        />  
+                    </div>
+                ))}
             </div>
             <button onClick={()=>getScore()} className='check-button'>Check</button>
         </div>

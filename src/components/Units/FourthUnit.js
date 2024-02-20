@@ -3,7 +3,7 @@ import {Task} from '../Task'
 import {InlineCompareTask} from '../Tasks/InlineCompareTest'
 import { TwoColumnsCompareTask } from '../Tasks/TwoColumnsCompareTask';
 import {ColumnInlineCompare} from '../Tasks/ColumnInlineCompare';
-import { InputCheckTask } from '../Tasks/InputCheckTask';
+import { InputCheckTask } from '../Tasks/input-check-task';
 import {CompareTextTask} from '../Tasks/CompareTextTask';
 import {TwoColumnInputTask} from '../Tasks/TwoColumnInputTask'
 import {TwoColumnsTextShow} from '../Tasks/TwoColumnsTextShow'

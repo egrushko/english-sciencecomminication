@@ -33,7 +33,7 @@ export const TwoColumnsCompareTask = ({headings,answers,rightAnswers,toCompare,b
         {
         dropDowns[i] = <div className='compare-selector-answers'>
                             <p>{toCompare[i]}</p>
-                            <AnswerSelection index={i} booleans={bools} answer={rightAnswers[i]} variants={letters}/>  
+                            <AnswerSelection index={i} booleans={bools} setBooleans={setBools} answer={rightAnswers[i]} variants={letters}/>  
                         </div>;
         }
     

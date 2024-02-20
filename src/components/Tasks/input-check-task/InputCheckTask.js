@@ -1,17 +1,37 @@
-import {InputField} from '../TasksUtils/InputField'
-import { TextContainer } from '../TasksUtils/TextContainer';
-import React from 'react';
+import {InputField} from '../../TasksUtils/InputField'
+import { TextContainer } from '../../TasksUtils/TextContainer';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
-import { CheckWindow } from '../TasksUtils/CheckWindow';
-import {Video} from '../TasksUtils/Video'
-
+import { CheckWindow } from '../../TasksUtils/CheckWindow';
+import {Video} from '../../TasksUtils/Video'
+import { checkIsWordSelected, checkSelectedValues } from './helpers';
 
 export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,useAB,helpText,contType,justText,placeholders,startNum,textTitle,useNums,useInputLength}) => {
   const reactStringReplace = require('react-string-replace');
   const [bools,setBools] = useState(Array(values.length).fill(false));
+  function mutateBool(mutateIndex, value) {
+    setBools(prev => prev.map((bool, currenIndex) => {
+      return currenIndex === mutateIndex ? value : bool
+    }))
+  }
+  const [usedValues, setUsedValues] = useState([])
+  useEffect(() => {
+    setUsedValues(checkSelectedValues(bools, values))
+  },[bools])
+  const [baseTextInitial, _] = useState([...baseText])
   const [check,setCheck] = useState(null);
 
-  const inputs = Array.from({length:values.length},(_,i)=><InputField useInputLength placeholder={Array.isArray(values[i])?values[i].reduce((max, n) => max.length > n.length ? max : n, ''):values[i]} idi={'inp'+ i + values.length + Math.random()} index = {i} savedValue={values[i]} bools={bools}/>);
+
+  const inputs = Array.from({length:values.length},(_,i) => (
+    <InputField 
+      useInputLength 
+      placeholder={Array.isArray(values[i])?values[i].reduce((max, n) => max.length > n.length ? max : n, ''):values[i]} idi={'inp'+ i + values.length + Math.random()} 
+      index = {i} 
+      savedValue={values[i]} 
+      bools={bools}
+      mutateBool={mutateBool}
+    />)
+  )
   const changers = Array.from({length:values.length},(_,i)=>["{inputs["+i+"]}",inputs[i]]);
   for(let i =0;i<changers.length;i++)
   {
@@ -34,15 +54,16 @@ export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,use
   }
   
   if(type==='words')
-    for(let i =0;i<baseText.length;i++)
-      baseText[i] = <p>{baseText[i]}</p>
+    for(let i =0;i<baseText.length;i++) {
+      baseText[i] = <p style={{textDecoration: checkIsWordSelected(baseTextInitial[i], usedValues) && 'line-through'}}>{baseTextInitial[i]}</p>
+    }
   
   const line = Array(baseText?baseText.length:0);
   if(type==='line')
   {
     
     for(let i =0;i<line.length;i++)
-    line[i] = <p>{i+1}) {baseText[i]}</p>
+    line[i] = <p>{i+1} {baseText[i]}</p>
   }
 
   function getScore()
@@ -55,7 +76,6 @@ export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,use
           }
         setCheck(<CheckWindow startNum={startNum} ab={useAB} bools={bools} score={scoreB} cont={setCheck}/>);
   }
-  
   return(
     <div className='input-task'>
       {helpText!==''?
@@ -65,11 +85,12 @@ export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,use
                     </p>
                 </span>:''}
         {video?<Video vid={video}/>:''}
-        {baseText?
-        <>
-        {type==='words'?<div className='input-words'>{baseText}</div>:''}
-        {type==='text'?<TextContainer title= {textTitle}  justText={true} text={baseText}/>:''}
-        {type==='line'?<div className={'input-line-type'}>{line}</div>:''}</>:''
+        {baseText && 
+          <>
+            {type==='words'?<div className='input-words'>{baseText}</div>:''}
+            {type==='text'?<TextContainer title= {textTitle}  justText={true} text={baseText}/>:''}
+            {type==='line'?<div className={'input-line-type'}>{line}</div>:''}
+          </>
         }
        <TextContainer title= {textTitle} justText={justText} type = {contType} text={text}/>
         <button onClick={()=>getScore()} className='check-button'>Check</button>
