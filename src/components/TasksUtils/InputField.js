@@ -49,7 +49,6 @@ export const InputField = ({
           length+=1;
       }
 
-
     const adjustInputSize=()=>{
       const loc = document.getElementById(idi);
       if(placeholder.length>0 && !useInputLength)
