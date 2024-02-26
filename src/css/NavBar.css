@@ -26,12 +26,12 @@
   }
   
   .nav-link{
-    color: #CED3DC;
+    color: #5B616A;;
     transition: .3s;
   }
   
   .nav-link:hover{
-    color: #5B616A;
+    color: #275DAD;
   }
 
   .site-title p {

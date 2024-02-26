@@ -26,7 +26,6 @@ export const Unit = ({tasks,names,unitNum,unitTitle}) => {
         tasksHandler[i] = <div className={ind-1===i?'unit-task-active':'unit-task-unactive'}>{tasks[i]}</div>;
         bttns[i] =<button className={ind-1===i?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(i+1)}>{names[i]}</button>;
     }
-    
     return(
         <div className='unit'>
             <div className='unit-buttons'>
@@ -37,8 +36,8 @@ export const Unit = ({tasks,names,unitNum,unitTitle}) => {
                 {tasksHandler}
             </div>
             <div className='unit-task-changer'>
-                <button className='task-change-button' onClick={()=>handleButtonClick(ind-1)}>Previous Task</button>
-                <button className='task-change-button' onClick={()=>handleButtonClick(ind+1)}><span className='task-change-next'>Next Task</span></button>
+                {ind > 1 ? <button className='task-change-button' disabled={ind === 1} onClick={()=>handleButtonClick(ind-1)}>Previous Task</button> : <div></div>}
+                {ind < tasks.length && <button className='task-change-button' onClick={()=>handleButtonClick(ind+1)}><span className='task-change-next'>Next Task</span></button>}
             </div>
         </div>
     )

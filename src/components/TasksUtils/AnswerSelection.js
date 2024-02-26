@@ -49,6 +49,7 @@ export const AnswerSelection = ({
                 event.preventDefault()
                 handleCompareInput(newValue)
             }}
+            
             placeholder='-'
         >
             {variants.map((variant,i) => (

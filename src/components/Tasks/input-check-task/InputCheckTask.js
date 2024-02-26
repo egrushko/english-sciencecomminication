@@ -1,10 +1,9 @@
 import {InputField} from '../../TasksUtils/InputField'
 import { TextContainer } from '../../TasksUtils/TextContainer';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import { CheckWindow } from '../../TasksUtils/CheckWindow';
 import {Video} from '../../TasksUtils/Video'
-import { checkIsWordSelected, checkSelectedValues } from './helpers';
 
 export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,useAB,helpText,contType,justText,placeholders,startNum,textTitle,useNums,useInputLength}) => {
   const reactStringReplace = require('react-string-replace');
@@ -14,11 +13,8 @@ export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,use
       return currenIndex === mutateIndex ? value : bool
     }))
   }
-  const [usedValues, setUsedValues] = useState([])
-  useEffect(() => {
-    setUsedValues(checkSelectedValues(bools, values))
-  },[bools])
-  const [baseTextInitial, _] = useState([...baseText])
+
+  const [baseTextInitial, _] = useState(!!baseText && [...baseText])
   const [check,setCheck] = useState(null);
 
 
@@ -55,7 +51,7 @@ export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,use
   
   if(type==='words')
     for(let i =0;i<baseText.length;i++) {
-      baseText[i] = <p style={{textDecoration: checkIsWordSelected(baseTextInitial[i], usedValues) && 'line-through'}}>{baseTextInitial[i]}</p>
+      baseText[i] = <p>{baseTextInitial[i]}</p>
     }
   
   const line = Array(baseText?baseText.length:0);

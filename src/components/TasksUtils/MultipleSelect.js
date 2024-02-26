@@ -1,4 +1,3 @@
-import { Form } from "react-bootstrap";
 import { useState } from "react";
 import React from 'react'
 import Select from 'react-select'
@@ -36,13 +35,13 @@ export const MultipleSelect = ({answers,variants,booleans,index}) =>{
         }
     }
     return(
-        <Select className="select"
-        isMulti
-        closeMenuOnSelect = {false}
-        value={values}
-        options={options}
-        onChange={handleCompareInput}
-        placeholder="-"
-      />
+        <Select 
+            className="select"
+            isMulti
+            value={values}
+            options={options}
+            onChange={handleCompareInput}
+            placeholder="-"
+        />
     )
 }

@@ -23,7 +23,6 @@
 .compare-task-two-columns{
     display: flex;
     gap:5vw;
-    padding-bottom: 15vh;
 }
 
 .compare-task-two-columns>*{
