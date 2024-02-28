@@ -28,7 +28,7 @@ export const InlineCompareTask = ({answers,rightAnswers,toCompare,helpText,start
             <div className = {"compare-answers-inline"}>
                 {toCompare.map((compareBlock, i) => (
                     <div className='compareinline-selector-answers'>
-                        <p>{compareBlock}</p>
+                        <p className='!text-base'>{compareBlock}</p>
                         <AnswerSelection 
                             index={i} 
                             booleans={bools} 

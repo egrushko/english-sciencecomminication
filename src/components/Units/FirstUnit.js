@@ -72,7 +72,7 @@ export const FirstUnit = () =>{
                 'a large amount of information stored in a computer system in such a way that it can be easily looked at'
                 ]} 
             answers={['an often numbered drawing or diagram used in a book to explain something',
-                'a shortened form of a statement speech etc',
+                'a shortened form of a statement, speech etc',
                 'a method of doing something that needs skill',
                 'the words written as a title at the top of a piece of writing, or at the top of each part of it',
                 'something that tells a reader where the information came from that is used in a piece of writing',

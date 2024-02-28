@@ -242,3 +242,7 @@ p .page-title {
 #275DAD синька
 #FCF7F8 белый
 */
+
+.MuiSelect-button {
+  white-space: normal !important;
+}
