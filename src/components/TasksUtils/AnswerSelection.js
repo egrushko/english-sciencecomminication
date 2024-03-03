@@ -53,7 +53,7 @@ export const AnswerSelection = ({
             size='sm'
         >
             {variants.map((variant,i) => (
-                <Option value={variant} sx={{ width: width*0.6, fontSize: 16 }}>{variant || '-'}</Option>
+                <Option value={variant} sx={{ width: width, fontSize: 16 }}>{variant || '-'}</Option>
             ))}
         </Select>
     )

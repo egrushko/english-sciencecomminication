@@ -60,7 +60,7 @@
 .compareinline-selector-answers .form-control{
     background-color: #FCF7F8;
     padding: 0.3vw;
-width: 100%;
+    width: 100%;
     border-radius: 1vw;
     border-color: transparent;
     font-size: 1.15vw;
@@ -140,4 +140,23 @@ width: 100%;
 
 .compare-task .text-container{
     margin-bottom: 2vh;
+}
+
+.compare-inline-block {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+.compare-inline-block .diffinitions, .compare-inline-block .selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.compare-inline-block .diffinitions p{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
 }

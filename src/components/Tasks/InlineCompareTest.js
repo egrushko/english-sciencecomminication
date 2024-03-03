@@ -25,20 +25,24 @@ export const InlineCompareTask = ({answers,rightAnswers,toCompare,helpText,start
             }
             {score}
             {baseText?<TextContainer title= {''} type={'text'}  justText={true} text={baseText}/>:''}
-            <div className = {"compare-answers-inline"}>
-                {toCompare.map((compareBlock, i) => (
-                    <div className='compareinline-selector-answers'>
-                        <p className='!text-base'>{compareBlock}</p>
-                        <AnswerSelection 
-                            index={i} 
-                            booleans={bools} 
-                            setBooleans={setBools}
-                            answer={rightAnswers[i]} 
-                            variants={Array.isArray(answers[i]) ? answers[i] : answers}
-                            width={1000}
-                        />  
-                    </div>
-                ))}
+            <div className = {"compare-inline-block"}>
+                <div className='diffinitions'>
+                    {toCompare.map((compareBlock, i) => (
+                            <p className='!text-base'>{compareBlock}</p>
+                    ))}
+                </div>
+                <div className='selectors'>
+                    {toCompare.map((_, i) => (
+                            <AnswerSelection 
+                                index={i} 
+                                booleans={bools} 
+                                setBooleans={setBools}
+                                answer={rightAnswers[i]} 
+                                variants={Array.isArray(answers[i]) ? answers[i] : answers}
+                                width={1000}
+                            />  
+                    ))}
+                </div>
             </div>
             <button onClick={()=>getScore()} className='check-button'>Check</button>
         </div>

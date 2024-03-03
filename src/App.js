@@ -14,7 +14,7 @@ import React, { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    document.title = 'English for Science';
+    document.title = 'LOCAL';
   }, []);
   return (
     <div className='App'>

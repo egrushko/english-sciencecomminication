@@ -12,6 +12,18 @@
     text-align: center;
     align-items: center;
   }
+  .nav-container .logos {
+    display: flex;
+    gap: 15px;
+  }
+  .nav-container .logos a { 
+    display: flex;
+    align-items: center;
+  }
+  .nav-container .logos a span {
+    font-size: 16px;
+    text-align: right;
+  }
   
   .navbar{
     background-color: #FCF7F8;

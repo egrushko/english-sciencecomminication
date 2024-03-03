@@ -6,16 +6,20 @@
 }
 
 .page{
-    width: 60vw;
     align-self: center;
     display: flex;
     flex-direction: column;
     gap: 0.1vw;
     background-color: white;
-    padding: 1vw;
     border-radius: 20px;
     align-items: center;
     margin-bottom: 1vw;
+    padding: 50px 100px 150px 100px;
+    margin: 0 100px 20px 100px;
+}
+
+.page h1 {
+    margin-bottom: 20px;
 }
 
 .page ol {
@@ -54,18 +58,26 @@
 }
 
 .home-text{
-    font-size: 1.5vw;
+    font-size: 18px !important;
     text-align: center;
 }
 
 .teacher-name{
     font-size: 1.5vw;
     color:#5B616A;
-    margin-top: 1vw;
     margin-bottom: 2vw;
+    margin-top: 24px;
 }
 
 .low-text{
     font-size: 1.2vw;
     color: #5B616A;
+    text-align: center;
+    margin-top: 33px;
 }
+@media  screen and (max-width: 900px) { 
+    .page {
+        padding: 20px;
+        margin: 10px;
+    }
+ }
