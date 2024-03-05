@@ -7,7 +7,7 @@ export const TextContainer = ({text,justText,type,title}) =>{
     {
         rows = Array(text.length);
         for(let i =0;i<rows.length;i++)
-            rows[i]=<li><p>{text[i]}</p></li>;
+            rows[i]=<li><p><span className='row-label'>{`${i + 1}. `}</span>{text[i]}</p></li>;
     }
 
     return(

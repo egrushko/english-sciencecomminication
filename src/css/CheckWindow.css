@@ -38,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     text-align: left;
-    margin: 1vw 1vw 1vw 3.5vw;
+    padding: 20px 20px;
     gap:1vw;
     align-content: center;
     align-self: center;
@@ -47,6 +47,7 @@
 .results-holder p{
     font-size: 2vw;
     flex:1 0 40%;
+    white-space: nowrap !important;
 }
 
 .correct-answer{

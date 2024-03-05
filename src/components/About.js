@@ -31,15 +31,12 @@ export const About = ()=>{
     return(
         <>
         <div className='unit-buttons'>
-            <button className={ind===0?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(0)}>About this online resource</button>
+            <button className={ind===0?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(0)}>About this resource</button>
             <button className={ind===1?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(1)}>About the author</button>
             <button className={ind===2?'unit-button-active unit-button':'unit-button'} onClick={()=>handleButtonClick(2)}>References</button>
         </div>
         <div className="page">
             <div className={ind===0?'unit-task-active':'unit-task-unactive'}>
-                <h1 className="page-title">
-                About this online resource
-                </h1>
                 <p>
                 Данное учебное пособие реализовано в форме Web-сайта. 
                 Учебное пособие “English for Science Communication” предназначено для бакалавров 3-4 курсов,
@@ -68,9 +65,6 @@ export const About = ()=>{
                 </p>
             </div>
             <div className={ind===1?'unit-task-active':'unit-task-unactive'}>
-            <h1 className="page-title">
-            About the author
-            </h1>
             <p className="about-title">
                 Грушко Елена Ивановна
             </p>
@@ -102,9 +96,18 @@ export const About = ()=>{
             </ol>
             </div>
             <div className={ind===2?'unit-task-active':'unit-task-unactive'}>
-            <h1 className="page-title">
-                References
-            </h1>
+            <p className="about-title">
+                Video links
+            </p>
+            <ol>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=BAS9I4tFgV8">The Structure of Scientific Research Papers                       </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=M3aZNaPY88Y">Efficient reading strategies</a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=MjcO2ExtHso">Life After Death by PowerPoint (Corporate Comedy Video) </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=BuB7IhWZnJs">31 Creative Presentation Ideas to Delight Your Audience </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=TmbQFWBvTtY">Body Language for Presentations  </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=Q5WT2vweFRY">Presenting and Public Speaking Tips - how to improve skills & confidence  </a></ul>
+            </ol>
+
             <p className="about-title">
                 Research papers
             </p>
@@ -124,18 +127,6 @@ export const About = ()=>{
                 <ul><a className='link' href={p14} target='_blank' rel='noopener noreferrer'> [14]</a> Carina Curto What can topology tell us about the neural code? Bulletin (New Series) of the American Mathematical Society Volume 54, Number 1, January 2017, Pages 63–78 http://dx.doi.org/10.1090/bull/1554 </ul>
                 <ul><a className='link' href={p15} target='_blank' rel='noopener noreferrer'> [15]</a> A.B. Kudimova, D.K. Nadolin, A.V. Nasedkin, P.A. Oganesyan, A.N. Soloviev Finite element homogenization models of bulk mixed piezocomposites with granular elastic inclusions in ACELAN package, Materials Physics and Mechanics 37 (2018) 25-3 3http://dx.doi.org/10.18720/MPM.3712018_4</ul>
 
-            </ol>
-
-            <p className="about-title">
-                Video links
-            </p>
-            <ol>
-                <ul><a className='link' href="https://www.youtube.com/watch?v=BAS9I4tFgV8">The Structure of Scientific Research Papers                       </a></ul>
-                <ul><a className='link' href="https://www.youtube.com/watch?v=M3aZNaPY88Y">Efficient reading strategies</a></ul>
-                <ul><a className='link' href="https://www.youtube.com/watch?v=MjcO2ExtHso">Life After Death by PowerPoint (Corporate Comedy Video) </a></ul>
-                <ul><a className='link' href="https://www.youtube.com/watch?v=BuB7IhWZnJs">31 Creative Presentation Ideas to Delight Your Audience </a></ul>
-                <ul><a className='link' href="https://www.youtube.com/watch?v=TmbQFWBvTtY">Body Language for Presentations  </a></ul>
-                <ul><a className='link' href="https://www.youtube.com/watch?v=Q5WT2vweFRY">Presenting and Public Speaking Tips - how to improve skills & confidence  </a></ul>
             </ol>
 
             <p className="about-title">

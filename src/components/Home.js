@@ -2,7 +2,6 @@ import '../css/Home.css'
 export const Home = () => {
     return(
         <div className="page">
-            <h1>Учебный онлайн ресурс</h1>
             <p className='home-text'>
                 Министерство образования и науки Российсикой Федерации
             </p>
