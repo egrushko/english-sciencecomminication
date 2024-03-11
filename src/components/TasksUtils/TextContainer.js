@@ -1,13 +1,15 @@
 import '../../css/TextContainer.css';
 import React from 'react';
 
-export const TextContainer = ({text,justText,type,title}) =>{
+export const TextContainer = ({text,justText,type,title, hasNum}) =>{
     var rows;
     if(!justText)
     {
         rows = Array(text.length);
-        for(let i =0;i<rows.length;i++)
-            rows[i]=<li><p><span className='row-label'>{`${i + 1}. `}</span>{text[i]}</p></li>;
+        for(let i =0;i<rows.length;i++) {
+            const numPart = hasNum && <span className='row-label'>{`${i + 1}. `}</span>
+            rows[i]=<li><p>{numPart}{text[i]}</p></li>;
+        }
     }
 
     return(

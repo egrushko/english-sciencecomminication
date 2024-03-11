@@ -126,11 +126,12 @@ video {
   width: 10vw;
   font-size: 2vw;
   align-self: center;
-  margin-top: 50px;
   border-radius: 1vw;
   color: #275DAD ;
   transition: .3s;
   cursor: pointer;
+  position: relative;
+  bottom: -75px;
 }
 
 .check-button:hover{

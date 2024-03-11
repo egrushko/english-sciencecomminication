@@ -67,7 +67,7 @@ export const InputField = ({
     }
 
     function handleCompareInput(event) {
-      setValue(event.target.value);
+      setValue(event.target.value.toLowerCase());
       if(typeof(savedValue)==='string')
       {
         const inp = event.target.value.replaceAll(',',' ').replaceAll('  ',' ').trim();
@@ -95,6 +95,6 @@ export const InputField = ({
       }
     }
     return(
-        <input id={idi} className={'input-field'} type="text" onChange={handleCompareInput}/>
+        <input id={idi} className={'input-field'} type="text" onChange={handleCompareInput} value={value}/>
     );
 }
