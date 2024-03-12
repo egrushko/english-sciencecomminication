@@ -35,3 +35,9 @@
     text-align: left;
     margin-bottom: 2vw;
 }
+
+.task-type div:last-of-type .check-button {
+    position: relative;
+    bottom: -75px;
+    margin-top: 0;
+}

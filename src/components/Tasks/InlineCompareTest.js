@@ -4,7 +4,7 @@ import {AnswerSelection} from '../TasksUtils/AnswerSelection'
 import { TextContainer } from '../TasksUtils/TextContainer';
 import { useState } from 'react';
 
-export const InlineCompareTask = ({answers,rightAnswers,toCompare,helpText,startNum,baseText}) => {
+export const InlineCompareTask = ({answers,rightAnswers,toCompare,helpText,startNum,baseText, selectEWidth}) => {
     const [bools,setBools] = useState(Array(toCompare.length).fill(false));
     const [score,setScore] = useState(null);
 
@@ -39,7 +39,7 @@ export const InlineCompareTask = ({answers,rightAnswers,toCompare,helpText,start
                                 setBooleans={setBools}
                                 answer={rightAnswers[i]} 
                                 variants={Array.isArray(answers[i]) ? answers[i] : answers}
-                                width={1000}
+                                width={selectEWidth || 1000}
                             />  
                     ))}
                 </div>

@@ -10,6 +10,7 @@ export const Task = ({type,title,helpText}) => {
                 </h1>:''}
             {type[i]}
         </>
+        console.log(inner)
     return(
         <div className="task">
                 <h1 className="task-title">

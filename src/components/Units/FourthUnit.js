@@ -19,7 +19,7 @@ export const FourthUnit = () => {
     return(
         <Unit unitNum={4} unitTitle={"Why Don’t the Mathematicians Learn to Speak?"} names = {['Task 1','Task 2','Task 3','Task 4','Video 4.1','Task 5','Task 6','Video 4.2','Speaking']}
             tasks= {[<Task helpText = {'Read the text and choose the best version to complete each statement (1-5).'} title = {'Reading - 1'}
-                        type ={[ <InlineCompareTask helpText = '' startNum={0}
+                        type ={[ <InlineCompareTask helpText = '' selectEWidth={630} startNum={0}
                             baseText={[<FourthUnitBigText/>]}
                             answers = {
                                 [             
@@ -57,7 +57,7 @@ export const FourthUnit = () => {
                             ]}
                     />,
                     <Task helpText = {''} title = {'Vocabulary - 1'}
-                        type ={[ <InlineCompareTask helpText = 'Match the words from the text with their definitions. There is one extra definition which you don’t need to use.' startNum={0}
+                        type ={[ <InlineCompareTask selectEWidth={950} helpText = 'Match the words from the text with their definitions. There is one extra definition which you don’t need to use.' startNum={0}
                             answers = {
                                 [             
                                     'system of specialized words and expressions used in a particular science, profession, activity etc',
