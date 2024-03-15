@@ -63,6 +63,9 @@ export const About = ()=>{
                 <p>
                 Каждый раздел содержит материалы для развития навыков чтения, аудирования и говорения, а также различные упражнения, направленные на введение, отработку и закрепление ключевой лексики по тематике раздела. Развитие навыков аудирования строится на основе работы с тематическими видео, что является существенным преимуществом, поскольку создает полезное и облегчающее понимание визуальное подкрепление для вербального контента.
                 </p>
+                <p><br/>Среди прочих материалов ниже приложен краткий видео-гайд по работе с некоторыми популярными сервисами для перевода и перефразирования текста с русского на английский языки. Изучение данных программных пакетов может пригодиться как во время выполнения заданий, так и, возможно, во время будущей научной работы.</p>
+                <br/>
+                <iframe width="720" height="405" src="https://www.youtube.com/embed/m1961RJLWgI?si=5wD0qdmW2dCkM2sU?controls=1&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div className={ind===1?'unit-task-active':'unit-task-unactive'}>
             <p className="about-title">
@@ -106,6 +109,7 @@ export const About = ()=>{
                 <ul><a className='link' href="https://www.youtube.com/watch?v=BuB7IhWZnJs">31 Creative Presentation Ideas to Delight Your Audience </a></ul>
                 <ul><a className='link' href="https://www.youtube.com/watch?v=TmbQFWBvTtY">Body Language for Presentations  </a></ul>
                 <ul><a className='link' href="https://www.youtube.com/watch?v=Q5WT2vweFRY">Presenting and Public Speaking Tips - how to improve skills & confidence  </a></ul>
+                <ul><a className='link' href="https://youtu.be/m1961RJLWgI?si=3H0vumXGOo4SeDnZ">Краткий видео-гайд по работе со средствами машинного перевода  </a></ul>
             </ol>
 
             <p className="about-title">

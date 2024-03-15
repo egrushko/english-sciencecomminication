@@ -120,6 +120,7 @@ export const SecondUnit = () =>{
                 type={
                     <InputCheckTask helpText={''} startNum={0}
                         type={'text'} 
+                        hasNumStart
                         baseText={[<SecondUnitBigText/>]}
                         text={
                             [

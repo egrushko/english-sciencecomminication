@@ -129,6 +129,7 @@ export const ThirdUnit = () => {
                             <InputCheckTask helpText={''} startNum={0}
                                 type={'text'} 
                                 baseText={[<ThirdUnitBigText/>]}
+                                hasNumStart
                                 text={
                                     [
                                         'strong, potent, robust, {inputs[0]}',

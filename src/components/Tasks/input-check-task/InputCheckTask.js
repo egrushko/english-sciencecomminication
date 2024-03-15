@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { CheckWindow } from '../../TasksUtils/CheckWindow';
 import {Video} from '../../TasksUtils/Video'
 
-export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,useAB,helpText,contType,justText,placeholders,startNum,textTitle,useNums,useInputLength}) => {
+export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,useAB,helpText,contType,justText,placeholders,startNum,textTitle,useNums,useInputLength, hasNumStart}) => {
   const reactStringReplace = require('react-string-replace');
   const [bools,setBools] = useState(Array(values.length).fill(false));
   function mutateBool(mutateIndex, value) {
@@ -88,7 +88,7 @@ export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,use
             {type==='line'?<div className={'input-line-type'}>{line}</div>:''}
           </>
         }
-       <TextContainer title= {textTitle} justText={justText} type = {contType} text={text} hasNum={useAB}/>
+       <TextContainer title= {textTitle} justText={justText} type = {contType} text={text} hasNum={useAB || hasNumStart}/>
         <button onClick={()=>getScore()} className='check-button'>Check</button>
         {check!==null?check:""}
     </div>

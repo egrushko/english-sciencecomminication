@@ -128,6 +128,7 @@ export const FourthUnit = () => {
                         type={
                             <InputCheckTask helpText={''} startNum={0}
                                 type={'text'} 
+                                hasNumStart
                                 baseText={[<FourthUnitBigText/>]}
                                 text={
                                     [
