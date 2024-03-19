@@ -11,7 +11,7 @@ export const InputField = ({
   useInputLength,
   mutateBool
 }) =>{
-  const [value,setValue] = useState("");
+  const [value,setValue] = useState('');
   useEffect(() => {
     adjustInputSize()
   },[value])

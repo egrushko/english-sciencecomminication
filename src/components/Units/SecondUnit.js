@@ -147,6 +147,7 @@ export const SecondUnit = () =>{
                     <InputCheckTask startNum = {0}
                     type={'text'} 
                     helpText={''} 
+                    hasNumStart
                     baseText={[<SecondUnitBigText/>]}
                     text={['бегло просмотреть статью - {inputs[0]}',
                            'посмотреть список литературы - {inputs[1]}',

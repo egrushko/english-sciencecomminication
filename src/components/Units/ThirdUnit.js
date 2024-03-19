@@ -164,6 +164,7 @@ export const ThirdUnit = () => {
                             <InputCheckTask startNum = {0}
                             type={'text'} 
                             helpText={''} 
+                            hasNumStart
                             baseText={[<ThirdUnitBigText/>]}
                             text={['компьютерное ПО для презентаций - {inputs[0]}',
                                 'сообщать идеи и результаты слушателям - {inputs[1]}',

@@ -139,12 +139,12 @@ export const FourthUnit = () => {
                                         'not real, hypothetical, non-existent, {inputs[4]}',
                                         'complex, difficult, sophisticated, {inputs[5]}',
                                         'unintelligible, indecipherable, difficult for understanding, {inputs[6]}',
-                                        'lack of information, lack of knowledge, unawareness,  {inputs[7]}',
-                                        'to speak, to report, to inform, {inputs[8]}',
+                                        'to speak, to report, to inform, {inputs[7]}',
+                                        'lack of information, lack of knowledge, unawareness,  {inputs[8]}',
                                         'event, experience, moment, {inputs[9]}'
                                     ]
                                 }
-                                values={['opportunity','development',['to enlighten','enlighten'],'knowledgeable','imaginary','complicated','incomprehensible','ignorance',['communicate','to communicate'],'occasion']}
+                                values={['opportunity','development',['to enlighten','enlighten'],'knowledgeable','imaginary','complicated','incomprehensible',['communicate','to communicate'], 'ignorance','occasion']}
                             />
                         }
                     />,
@@ -155,6 +155,7 @@ export const FourthUnit = () => {
                             <InputCheckTask startNum = {0}
                             type={'text'} 
                             helpText={''} 
+                            hasNumStart
                             baseText={[<FourthUnitBigText/>]}
                             text={['еженедельный коллоквиум на кафедре математики - {inputs[0]}',
                                 'возможность для преподавательского состава и студентов - {inputs[1]}',
@@ -246,17 +247,38 @@ export const FourthUnit = () => {
                             helpText={'For questions 1-10, read the text below. Use the word given in capitals in the box to form a word that fits in the gap in each line.'}
                             type={
                                 [
-                                <InputCheckTask startNum = {0} textTitle = {"Nonverbal communication matters "} useNums={true}
+                                <InputCheckTask 
+                                    startNum = {0}
+                                    useNums = {true}
+                                    contType = 'none'
+                                    type={'line'}
+                                    justText={true}
+                                    helpText={''}
+                                text={['Eye contact: This helps to regulate the flow of communication. It signals interest in others and increases the speaker`s \n{inputs[0]} . Speakers who make eye contact, open the flow of communication and convey interest,\nconcern and {inputs[1]} .\nFacial Expressions: Smiling is a {inputs[2]} cue that transmits friendliness and liking. So, if you smile frequently you will be perceived as more likable, friendly, warm, and {inputs[3]} . Smiling is often contagious, and others will react {inputs[4]} . They will be more comfortable around you and will want to listen to you more.\nGestures: If you fail to gesture while speaking, you may be perceived as {inputs[5]} and stiff. A lively speaking style captures attention and makes the material more interesting and {inputs[6]} understanding.\nPosture and body orientation: You communicate numerous messages by the way you talk and move. Standing erect and leaning forward communicates that you are approachable, receptive, and friendly. Speaking with your back turned or looking at the floor or ceiling should be avoided as it communicates {inputs[7]}.\nVoice: One of the major {inputs[8]} of speakers is that they speak in a monotone voice. Listeners perceive this type of speaker as boring and dull. People report that they learn less and lose interest more quickly when listening to those who have not learned to {inputs[9]} their voices.']}
+                                
+
+                                textTitle = {"Nonverbal communication matters "} 
                                 baseText={['CREDIBLE','WARM','POWER','APPROACH','FAVOUR','BORE','FACILITY','INTERESTING','CRITICAL','MODULATION']}
-                                helpText=''
                                 toBold={["Eye contact","Facial Expressions","Gestures","Posture and body orientation","Voice"]}
-                                text={["Eye contact: This helps to regulate the flow of communication. It signals interest in others and increases the speaker's \n{inputs[0]} . Speakers who make eye contact, open the flow of communication and convey interest,\nconcern and {inputs[1]}.\nFacial Expressions: Smiling is a {inputs[2]} cue that transmits friendliness and liking. So, if you smile frequently you will be perceived as more likable, friendly, warm, and {inputs[3]} . Smiling is often contagious, and others will react {inputs[4]} . They will be more comfortable around you and will want to listen to you more.\nGestures: If you fail to gesture while speaking, you may be perceived as {inputs[5]} and stiff. A lively speaking style captures attention and makes the material more interesting and {inputs[6]} understanding.\nPosture and body orientation: You communicate numerous messages by the way you talk and move. Standing erect and leaning forward communicates that you are approachable, receptive, and friendly. Speaking with your back turned or looking at the floor or ceiling should be avoided as it communicates {inputs[7]}.\nVoice: One of the major {inputs[8]} of speakers is that they speak in a monotone voice. Listeners perceive this type of speaker as boring and dull. People report that they learn less and lose interest more quickly when listening to those who have not learned to {inputs[9]} their voices."]}
-                                contType='none'
-                                type = 'line'
                                 values = {['CREDIBILITY','WARMTH','POWERFUL','APPROACHABLE','FAVOURABLY','BORING','FACILITATES','DISINTEREST','CRITICISMS','MODULATE']}
+                                // text={['If you walk into a bookstore, you are not {inputs[0]} to find Newton’s Principia, anything by Marcus Aurelius, or even any of Einstein’s popular works. If you make your way to the shelf with magazines you’ll find Time, but not Nature, and Scientific American, but not Science. Why? One clue lies in the {inputs[1]} of the skills required to read Newton, Marcus Aurelius, or Einstein, to read Nature or Science, skills that are not generally needed to read Newsweek, Time, or People. These skills are not to be found in the particular knowledge of the scientific {inputs[2]} but rather are to be found in the general skills of reading possessed by any educated person. Unfortunately, these skills are not often taught in high schools and \n{inputs[3]}. It is perfectly possible, even typical, to reach {inputs[4]} school or beyond and still be lacking many of the basic skills necessary for reading the {inputs[5]} literature in almost every field of knowledge. Surveying the text (title, author, date, etc) and skimming and scanning are {inputs[6]} academic reading skills for you and for native English speakers too who also need to develop these skills.']}
+
                                 />
                                 ]
+                                
                             }
+                            // type={[
+                            //     <InputCheckTask 
+                            //         startNum = {0}
+                            //         useNums = {true}
+                            //         contType = 'none'
+                            //         type={'words'}
+                            //         justText={true}
+                            //         helpText={''}
+                            //         text={['If you walk into a bookstore, you are not {inputs[0]} to find Newton’s Principia, anything by Marcus Aurelius, or even any of Einstein’s popular works. If you make your way to the shelf with magazines you’ll find Time, but not Nature, and Scientific American, but not Science. Why? One clue lies in the {inputs[1]} of the skills required to read Newton, Marcus Aurelius, or Einstein, to read Nature or Science, skills that are not generally needed to read Newsweek, Time, or People. These skills are not to be found in the particular knowledge of the scientific {inputs[2]} but rather are to be found in the general skills of reading possessed by any educated person. Unfortunately, these skills are not often taught in high schools and \n{inputs[3]}. It is perfectly possible, even typical, to reach {inputs[4]} school or beyond and still be lacking many of the basic skills necessary for reading the {inputs[5]} literature in almost every field of knowledge. Surveying the text (title, author, date, etc) and skimming and scanning are {inputs[6]} academic reading skills for you and for native English speakers too who also need to develop these skills.']}
+                            //         baseText={['graduate','certainly','colleges','likely','essential','primary','number','specialist','nature','active']}
+                            //         values={['likely','nature','specialist','colleges','graduate','primary','essential']}/>]
+                            //   }
                         />,
                 <Task
                         helpText={'Watch the video, take notes to answer the questions and to complete the chart below. Be ready to discuss this information IN CLASS.'}

@@ -1,6 +1,6 @@
 import {InputField} from '../../TasksUtils/InputField'
 import { TextContainer } from '../../TasksUtils/TextContainer';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { CheckWindow } from '../../TasksUtils/CheckWindow';
 import {Video} from '../../TasksUtils/Video'
@@ -26,6 +26,7 @@ export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,use
       savedValue={values[i]} 
       bools={bools}
       mutateBool={mutateBool}
+      key={'input' + i}
     />)
   )
   const changers = Array.from({length:values.length},(_,i)=>["{inputs["+i+"]}",inputs[i]]);
@@ -34,13 +35,17 @@ export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,use
       for(let j =0; j<text.length;j++)
         text[j] = reactStringReplace(text[j],changers[i][0],()=>(useNums?<span className='bold'>({i+1})  {changers[i][1]}</span>:changers[i][1]));
   }
-
-  if(toBold)
-  for(let i =0; i<toBold.length;i++){
-    for(let j =0; j<text.length;j++){
-      text[j] = reactStringReplace(text[j],toBold[i],(x)=>(x===toBold[i]?<span className='bold'>{toBold[i]}</span>:x));
+  useEffect(() => {
+    if(toBold)
+    for(let i =0; i<toBold.length;i++){
+      for(let j =0; j<text.length;j++){
+        text[j] = reactStringReplace(text[j],toBold[i],(x) => {
+          return x===toBold[i]?<span className='bold color-red'>{toBold[i]}</span>:x
+        });
+      }
     }
-  }
+  },[])
+
 
   if(links){
     for(let i =0; i<links.length;i++){
@@ -72,6 +77,7 @@ export const InputCheckTask = ({video,toBold,links,values,text,baseText,type,use
           }
         setCheck(<CheckWindow startNum={startNum} ab={useAB} bools={bools} score={scoreB} cont={setCheck}/>);
   }
+
   return(
     <div className='input-task'>
       {helpText!==''?
