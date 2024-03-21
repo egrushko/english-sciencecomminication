@@ -12,6 +12,8 @@ import p4 from "../pdf/paper4.pdf"
 import p6 from "../pdf/u1r3p3.pdf"
 import p8 from "../pdf/u1r3p5.pdf"
 import p9 from "../pdf/p9.pdf"
+import instraction from '../videos/translate-instraction.mkv'
+import { Video } from './TasksUtils/Video';
 
 export const About = ()=>{
     const [ind,setInd] = useState(0);
@@ -65,7 +67,7 @@ export const About = ()=>{
                 </p>
                 <p><br/>Среди прочих материалов ниже приложен краткий видео-гайд по работе с некоторыми популярными сервисами для перевода и перефразирования текста с русского на английский языки. Изучение данных программных пакетов может пригодиться как во время выполнения заданий, так и, возможно, во время будущей научной работы.</p>
                 <br/>
-                <iframe width="720" height="405" src="https://www.youtube.com/embed/m1961RJLWgI?si=5wD0qdmW2dCkM2sU?controls=1&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <Video vid={instraction}/>
             </div>
             <div className={ind===1?'unit-task-active':'unit-task-unactive'}>
             <p className="about-title">

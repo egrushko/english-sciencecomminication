@@ -1,7 +1,7 @@
 import '../../css/TextContainer.css';
 import React from 'react';
 
-export const TextContainer = ({text,justText,type,title, hasNum}) =>{
+export const TextContainer = ({text,justText,type,title, hasNum, extraTextContent}) =>{
     var rows;
     if(!justText)
     {
@@ -21,6 +21,7 @@ export const TextContainer = ({text,justText,type,title, hasNum}) =>{
                 <ol type={type} className={type==='none'?'no-type':''}>
                     {title?<li><h3>{title}</h3></li>:''}
                     {rows}
+                    {extraTextContent && extraTextContent}
                 </ol>
             }
         </div>

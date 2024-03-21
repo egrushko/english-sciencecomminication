@@ -20,7 +20,7 @@ import u3s12 from '../../videos/u3s12.mkv'
 import u3s13 from '../../videos/u3s13.mkv'
 import u3s14 from '../../videos/u3s14.mkv'
 import u3s15 from '../../videos/u3s15.mkv'
-import u3s16 from '../../videos/u3s16.mkv'
+import u3s16 from '../../videos/u3s16.mov'
 
 import speaking from '../../img/speaking3.png'
 
@@ -140,8 +140,8 @@ export const ThirdUnit = () => {
                                         'enough, adequate, satisfactory, {inputs[5]}',
                                         'to confuse, to mislead, to disorient, {inputs[6]}',           
                                         'to draw one’s attention from, to take the mind off, to sidetrack, {inputs[7]}',
-                                        'to underline, to highlight, to stress, {inputs[8]}',
-                                        'convenient, helpful, useful, {inputs[9]}',
+                                        'convenient, helpful, useful, {inputs[8]}',
+                                        'to underline, to highlight, to stress, {inputs[9]}',
                                     ]
                                 }
                                 values={['powerful',
@@ -152,8 +152,9 @@ export const ThirdUnit = () => {
                                 'sufficient',
                                 ['to obscure','obscure'],                       
                                 ['to distract','to distract from','distract','distract from'],
-                                ['to emphasize','emphasize'],
-                                'handy']}
+                                'handy',
+                                ['to emphasize','emphasize']
+                                ]}
                             />
                         }
                     />,
