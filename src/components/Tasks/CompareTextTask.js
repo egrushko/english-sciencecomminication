@@ -85,9 +85,10 @@ export const CompareTextTask = ({textType,headings,answers,rightAnswers,collage,
                 <h3>{baseText[0]}</h3>
                 {baseText[1]}
                 {papers?<>
-                <a href={papers[0]} target='_blank' rel='noopener noreferrer'>  [1]</a>
-                <a href={papers[1]} target='_blank' rel='noopener noreferrer'>  [2]</a>
-                <a href={papers[2]} target='_blank' rel='noopener noreferrer'>  [3]</a></>:''}
+                {papers.map((paper,i) => (
+                    <a href={paper} target='_blank' rel='noopener noreferrer'>  [{i+1}]</a>
+                ))}
+                </>:''}
                 {baseText[2]}
                 </p></div>:"")}
             <div className = {collage?"compare-answers-collage":"compare-answers"}>

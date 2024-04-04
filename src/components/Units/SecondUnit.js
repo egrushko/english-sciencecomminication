@@ -216,7 +216,7 @@ export const SecondUnit = () =>{
                 helpText=''
                 useMultiple
                 papers={[p10,p12,p13,p14,p9,p15,p11,p17]}
-                paperIndex = {['10','12','13','14','9','15','11','17']}
+                paperIndex = {['11','14','20','18','13','19','15','17']}
                 rightAnswers={['C','G',['A','F'],'D','E',['B','H']]}
                 answers={['A','B','C','D','E','F','G','H']}
                 toCompare={['1. Experimental',
@@ -265,7 +265,7 @@ export const SecondUnit = () =>{
                     ]}
                     helpText={''}
                     papersOne={[p10,p12,p13,p14,p9,p15,p11,p17]}
-                    paperIndexOne = {['10','12','13','14','9','15','11','17']}
+                    paperIndexOne = {['11','14','20','18','13','19','15','17']}
                     rightText=''
                     noHeadersText={[
                         ['Interdisciplinary Programming Language Design','M. Coblenz, J. Aldrich, B. A. Myers, J. Sunshine','Approaches for programming language design used commonly in the research community today center around theoretical and performance-oriented evaluation. Recently, researchers have been considering more approaches to language design, including the use of quantitative and qualitative user studies that examine how different designs might affect programmers. In this paper, we argue for an interdisciplinary approach that incorporates many different methods in the creation and evaluation of programming languages. We argue that the addition of user-oriented design techniques can be helpful at many different stages in the programming language design process.'],
@@ -293,7 +293,7 @@ export const SecondUnit = () =>{
                   type = 'line'
                   values = {['ELIMINATE','PROMISING',['AUTOMATED','AUTOMATIC'],'GENEROUSLY','INVESTMENTS','ACCURACY','DIFFERENT','USER','NEURAL',['ANALYSES','ANALYZES']]}
                   extraTextContent={
-                    <span className='px-[1.5vw]'>You might want <a href='/#/about'>to watch the video guide</a> on how to use machine translation instruments available now more effectively and more efficiently.</span>}
+                    <div className='px-[1.5vw] leading-10'>You might want <a href='/#/about'>to watch the video guide</a> on how to use machine translation instruments available now more effectively and more efficiently.</div>}
                   />
                 ]
               }

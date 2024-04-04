@@ -20,6 +20,7 @@ import u1r3p5 from '../../pdf/u1r3p5.pdf'
 import u1t1p1 from '../../pdf/u1t1p1.pdf'
 import u1t1p2 from '../../pdf/u1t1p2.pdf'
 import u1t1p3 from '../../pdf/u1t1p3.pdf'
+import u1t1p4 from '../../pdf/u1t1p4.pdf'
 import paper1 from '../../pdf/paper1.pdf'
 import paper2 from '../../pdf/paper2.pdf'
 import paper3 from '../../pdf/paper3.pdf'
@@ -36,7 +37,7 @@ export const FirstUnit = () =>{
           <CompareTextTask startNum = {0}
           helpText={''} 
           useLettersInCheck={true} 
-          papers={[u1t1p1,u1t1p2,u1t1p3]}  
+          papers={[u1t1p1,u1t1p2,u1t1p3, u1t1p4]}  
           baseText={["                                                                      What is the structure of a scientific paper?","\nAll scientific papers have the same general format. They  are  divided  into  distinct  sections  and  each section  contains  a  specific  type  of  information.  The number and the headings of sections may vary among journals,  but  for  the  most  part  a basic  structure  is  maintained.\nTypically,  scientific  papers  are comprised of the following parts: \n\n              1. Title                                                                 4. Introduction                                        8. Acknowledgments (optional)\n              2. Abstract                                                         5. Methods                                                9. References / Bibliography\n              3. Authors and affiliations                          6. Results                                                 10. Appendix / Appendices (optional)\n                                                                                             7. Discussion \n\nLook at some research papers and the sections that they include.","\nBecause  scientific  papers  are  organized  in  this  way, readers  know  what  to  expect  from  each  part  of  the paper,  and  they  can  quickly  locate  a  specific  type  of information. \nLet’s examine the content in each section of a scientific paper, and discuss why each section may be useful to you as a reader."]}
           collage={true} 
           answers={[null,'Title','Abstract','Authors and affiliations','Introduction','Methods','Results','Discussion','Acknowledgments','References','Appendix / Appendices']}
@@ -210,7 +211,7 @@ export const FirstUnit = () =>{
                 helpText=''
                 rightAnswers={['C','F','E','D']}
                 answers={['A','B','C','D','E','F']}
-                paperIndex={['2','1','4','3']}
+                paperIndex={['6','5','8','7']}
                 papers={[paper2,paper1,paper4,paper3]}
                 toCompare={['1. Stress-based shape and topology optimization with the level set method',
                     '2. Stochastic Discontinuous Galerkin Methods based on fluctuation-dissipation balance ',
@@ -237,7 +238,7 @@ export const FirstUnit = () =>{
                 useMultiple
                 helpText=''
                 papers={[u1r3p1,u1r3p2,u1r3p3,u1r3p5,u1r3p4]}
-                paperIndex = {['4','5','6','8','7']}
+                paperIndex = {['8','9','10','12','11']}
                 rightAnswers={[['A','E'],['C','D'],['B','C','D','E'],['C']]}
                 answers={['A','B','C','D','E']}
                 toCompare={['1. Inform about people who in addition to the authors contributed to the work   ',
@@ -377,10 +378,10 @@ export const FirstUnit = () =>{
                         '20. This material is based upon work supported by …'
                     ]}
                     helpText={''}
-                    paperIndexOne={['2','1','4','3']}
+                    paperIndexOne={['6','5','8','7']}
                     papersOne={[paper2,paper1,paper4,paper3]}
                     papersTwo={[u1r3p1,u1r3p2,u1r3p3,u1r3p5,u1r3p4]}
-                    paperIndexTwo = {['4','5','6','8','7']}
+                    paperIndexTwo = {['8','9','10','12','11']}
                     rightText={["We are also indebted to P. Getreuer, for making available the waveletcdf97 MATLAB function that we have used for the transformation of each single channel image to the wavelet domain.",
                     "The authors are grateful for an anonymous referee, for valuable  comments and alerting us that the global efficiency measure is the Harary index divided by n/2. Research was supported by a National Science Foundation Research Experience for Undergraduates Site Award #1062128.",
                     "The research described in this chapter has been supported by grants #0083075, #0205679, #0205724, #0350754, and #0534771 from the U.S. National Science Foundation. No endorsement implied. Mark Ackerman at University of Michigan, Ann Arbor; Les Gasser at University of Illinois, UrbanaChampaign; John Noll at Santa Clara University; Margaret Elliott, Chris Jensen, and others at the UCI Institute for Software Research are collaborators on the research described here.",
