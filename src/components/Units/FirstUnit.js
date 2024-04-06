@@ -138,7 +138,7 @@ export const FirstUnit = () =>{
                     'to define, to identify, to find out, to specify, {inputs[6]}',
                     'readers, listeners, attendees, {inputs[7]}',
                     'section, part, segment, {inputs[8]}',
-                    'to help in sth, to have a hand in sth, to provide support for sth, {inputs[9]}']} values={['distinct',['to be comprised of','are comprised of',"be comprised of"],'optional','specific',['to analyze','analyze'],['to anticipate','anticipate'],['to determine','determine'],'audience','portion',['to contribute to','contribute to','contributed to']]}/>} />,
+                    'to help in sth, to have a hand in sth, to provide support for sth, {inputs[9]}']} values={['distinct',['to be comprised of','are comprised of',"be comprised of"],'optional','specific',['to analyze','analyze'],['to anticipate','anticipate'],['to determine','determine'],'audience','portion',['to contribute to','contribute to','contributed to', 'to contribute to sth', 'contribute to sth']]}/>} />,
         <Task 
             title='Vocabulary - 3' 
             helpText={'Skim the text and find the English equivalents for the Russian collocations 1-20.'} 

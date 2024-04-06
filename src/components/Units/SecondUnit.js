@@ -293,7 +293,7 @@ export const SecondUnit = () =>{
                   type = 'line'
                   values = {['ELIMINATE','PROMISING',['AUTOMATED','AUTOMATIC'],'GENEROUSLY','INVESTMENTS','ACCURACY','DIFFERENT','USER','NEURAL',['ANALYSES','ANALYZES']]}
                   extraTextContent={
-                    <div className='px-[1.5vw] leading-10'>You might want <a href='/#/about'>to watch the video guide</a> on how to use machine translation instruments available now more effectively and more efficiently.</div>}
+                    <div className='px-[1.5vw] leading-[2vw] text-[1.5vw] mt-1'>You might want <a href='/#/about'>to watch the video guide</a> on how to use machine translation instruments available now more effectively and more efficiently.</div>}
                   />
                 ]
               }
