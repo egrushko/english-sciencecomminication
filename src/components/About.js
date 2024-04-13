@@ -163,7 +163,7 @@ export const About = ()=>{
                 <ul><a className='link' href="https://youtu.be/m1961RJLWgI?si=3H0vumXGOo4SeDnZ">Краткий видео-гайд по работе со средствами машинного перевода  </a></ul>
             </ol>
 
-            <p className="about-title">
+            <p className="about-title mt-4">
                 Research papers
             </p>
             <ol>
@@ -187,7 +187,7 @@ export const About = ()=>{
                 <ul><a className='link' href={p15} target='_blank' rel='noopener noreferrer'> [19]</a> A.B. Kudimova, D.K. Nadolin, A.V. Nasedkin, P.A. Oganesyan, A.N. Soloviev Finite element homogenization models of bulk mixed piezocomposites with granular elastic inclusions in ACELAN package, Materials Physics and Mechanics 37 (2018) 25-3 3http://dx.doi.org/10.18720/MPM.3712018_4</ul>
                 <ul><a className='link' href={p20} target='_blank' rel='noopener noreferrer'> [20]</a> Cameron Fabbri, Conditional Wasserstein Generative Adversarial Networks, University of Minnesota Computer Science and Engineering fabbr013@umn.edu</ul>
             </ol>
-            <p className="about-title">
+            <p className="about-title mt-4">
                 Research papers in Humanities (for analysis and comparison with research papers in Sciences)
             </p>
 
@@ -200,19 +200,19 @@ export const About = ()=>{
                 <ul><a className='link' href={p26} target='_blank' rel='noopener noreferrer'>[26]</a> Mark Louis, Angelina Anne Fernandez, Nazura Abdul Manap, Shamini Kandasamy, Lee Sin Yee, ARTIFICIAL INTELLIGENCE: IS IT A THREAT OR AN OPPORTUNITY BASED ON ITS LEGAL PERSONALITY AND CRIMINAL LIABILITY?  Journal of Information System and Technology Management, Volume 6 Issue 20 (March 2021) PP. 01-09 DOI: 10.35631/JISTM.620001</ul>
             </ol>
 
-            <p className="about-title">
+            <p className="about-title mt-4">
                 Research papers in Q1 scientific journals published by Southern Federal University (SFedU) researchers.
             </p>
 
             <ol>
                 
                 <ul><a className='link' href={p27} target='_blank' rel='noopener noreferrer'>[27]</a> R. Nedin, A.Vatulyan, Inverse problem of non-homogeneous residual stress identification in thin plates, International Journal of Solids and Structures 50 (2013)2107–2114</ul>
-                <ul><a className='link' href={p28} target='_blank' rel='noopener noreferrer'>[28]</a> A. A. Guda, S. A. Guda, A. Martini, A. N. Kravtsova, A. Algasov, A. Bugaev, S. P. Kubrin, L. V. Guda, P. Šot, J. A. van Bokhoven, C. Copéret and A. V. Soldatov, Understanding X-ray absorption spectra by means of descriptors and machine learning a</ul>
+                <ul><a className='link' href={p28} target='_blank' rel='noopener noreferrer'>[28]</a> A. A. Guda, S. A. Guda, A. Martini, A. N. Kravtsova, A. Algasov, A. Bugaev, S. P. Kubrin, L. V. Guda, P. Šot, J. A. van Bokhoven, C. Copéret and A. V. Soldatov, Understanding X-ray absorption spectra by means of descriptors and machine learning algorithms, npj Computational Materials (2021) 203, www.nature.com/npjcompumats</ul>
                 <ul><a className='link' href={p29} target='_blank' rel='noopener noreferrer'>[29]</a> Victor A. Chaplygin, Vishnu D. Rajput, Saglara S. Mandzhieva, Tatiana M. Minkina, Dina G. Nevidomskaya, Olga G. Nazarenko, Valery P. Kalinitchenko, Ritu Singh, Aleksey Yu Maksimov, and Victoria A. Popova, Comparison of Heavy Metal Content in Artemisia austriaca in Various Impact Zones, ACS Omega 2020, 5, 23393−23400</ul>
                 <ul><a className='link' href={p30} target='_blank' rel='noopener noreferrer'>[30]</a> A.A.Batalshchikov, S.M.Grudsky, I.S.Malisheva, S.S.Mihalkovich, E.Ramírez de Arellano, V.A.Stukopin, Asymptotics of eigenvalues of large symmetric Toeplitz matrices with smooth simple-loop symbols,  Linear Algebra and its Applications 580(2019)292–335 <b>(Pure Mathematics paper)</b></ul>
             </ol>
 
-            <p className="about-title">
+            <p className="about-title mt-4">
                 Illustrations
             </p>
             <ol>
