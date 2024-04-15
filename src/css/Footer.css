@@ -13,6 +13,7 @@
     padding: 0.5vw 5.5vw;
     background-color: #8c94bc;
     display: flex;
+    justify-content: space-between;
     gap:1vw;
   }
 
