@@ -201,7 +201,7 @@ export const About = ()=>{
             </ol>
 
             <p className="about-title mt-4">
-                Research papers in Q1 scientific journals published by Southern Federal University (SFedU) researchers.
+                Research papers in Q1 scientific journals published by Southern Federal University (SFedU) researchers
             </p>
 
             <ol>
