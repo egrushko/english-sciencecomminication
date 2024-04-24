@@ -25,6 +25,7 @@ import p15 from '../../pdf/p15.pdf'
 import p17 from '../../pdf/p17.pdf'
 
 export const SecondUnit = () =>{
+
     return(
         <Unit unitTitle={"How to read a scientific paper?"} unitNum={2} names = {['Task 1','Task 2','Task 3','Task 4','Task 5','Task 6','Task 7','Task 8','Video 2.1','Video 2.2','Speaking']}
         tasks={[
@@ -293,7 +294,7 @@ export const SecondUnit = () =>{
                   type = 'line'
                   values = {['ELIMINATE','PROMISING',['AUTOMATED','AUTOMATIC'],'GENEROUSLY','INVESTMENTS','ACCURACY','DIFFERENT','USER','NEURAL',['ANALYSES','ANALYZES']]}
                   extraTextContent={
-                    <div className='px-[1.5vw] leading-[2vw] text-[1.5vw] mt-1'>You might want <a href='/#/about'>to watch the video guide</a> on how to use machine translation instruments available now more effectively and more efficiently.</div>}
+                    <div className='px-[1.5vw] leading-[2vw] text-[1.5vw] mt-1'>You might want <a href='/#/about?activeTab=0'>to watch the video guide</a> on how to use machine translation instruments available now more effectively and more efficiently.</div>}
                   />
                 ]
               }
