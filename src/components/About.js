@@ -29,12 +29,23 @@ import p29 from '../pdf/p29.pdf'
 import p30 from '../pdf/p30.pdf'
 import instraction from '../videos/translate-instraction.mkv'
 import { Video } from './TasksUtils/Video';
+import { useSearchParams } from 'react-router-dom';
 
 export const About = ()=>{
+    const [searchParams, setSearchParams] = useSearchParams();
+    
     const [ind,setInd] = useState(0);
     useEffect(() => {
         var parsed = JSON.parse(window.localStorage.getItem('indA'));
-        setInd(parsed?parsed:0);
+        const querySelectedTab = searchParams.get('activeTab')
+        if (querySelectedTab || querySelectedTab === '0') {
+            setSearchParams((params) => {
+                params.delete('activeTab');
+                return params;
+              });
+        }
+        const finalActiveTab = querySelectedTab || parsed || 0
+        setInd(+finalActiveTab)  
       }, []);
     
     useEffect(() => {
