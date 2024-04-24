@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player'
 
 export const Video = ({vid, className}) => {
     return(
-        <video controls className={className}>
+        <video preload='auto' controls className={className}>
             <source src = {vid}/>
         </video>
     )
