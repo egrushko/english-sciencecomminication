@@ -211,6 +211,7 @@ export const FourthUnit = () => {
                                     contType='none'
                                     useNums
                                     video={[""]}
+                                    youtubeSrc="https://www.youtube.com/embed/wsISUHcOhYs?si=XOqOLdL52Tn8FM5V" 
                                     textTitle="Presenting and public speaking tips"
                                     toBold={["Focus on the audience.","Delete all excess text from your slides.","Keep it simple.","Rehearse."]}
                                     text={
@@ -274,6 +275,7 @@ export const FourthUnit = () => {
                                 image = {v42}
                                 text={['How does the information about the importance of nonverbal communication presented in this video compare with the one presented in Task 6:','       • What is similar?','       • What is different?']}
                                 video={""} 
+                                youtubeSrc="https://www.youtube.com/embed/AadasWi8Y_8?si=tl-n7Ze1W6BQeMUn" 
                             />
                         }
                     />,

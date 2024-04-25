@@ -7,7 +7,7 @@ import {Video} from '../TasksUtils/Video'
 import '../../css/TrueFalseTask.css'
 
 
-export const TrueFalseTask = ({answers,statements,helpText,useAB,startNum,text,textTitle,video,useNums}) => {
+export const TrueFalseTask = ({answers,statements,helpText,useAB,startNum,text,textTitle,video, youtubeSrc,useNums}) => {
   const [bools,setBools] = useState(Array(answers.length).fill(false));
   const [check,setCheck] = useState(null);
   const [boxes,setBoxes] = useState(Array(answers.length).fill(null));
@@ -56,7 +56,7 @@ export const TrueFalseTask = ({answers,statements,helpText,useAB,startNum,text,t
                         {helpText}
                     </p>
                 </span>:''}
-        {video?<Video vid={video}/>:""}
+        {video?<Video vid={video} youtubeSrc={youtubeSrc}/>:""}
         {text?<TextContainer title= {textTitle} type = {'none'}  justText={true} text={text}/>:""}
         {compares}
         <button onClick={()=>getScore()} className='check-button'>Check</button>

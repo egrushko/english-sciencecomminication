@@ -220,6 +220,7 @@ export const ThirdUnit = () => {
                                 [
                                     <TrueFalseTask helpText='As you watch the video mark (T) the points discussed in the video and mark (F) the points not discussed in the video.'
                                     video={video31}
+                                    youtubeSrc="https://www.youtube.com/embed/LIWurJCSSRE?si=fagpoef6i1LANMU8"
                                     textTitle={''}
                                     startNum={0}
                                     statements={
@@ -317,6 +318,7 @@ export const ThirdUnit = () => {
                                     contType='none'
                                     useNums
                                     video={video32}
+                                    youtubeSrc="https://www.youtube.com/embed/H9Sk0DBLoFY?si=mZ-U69yxAU4zlxBc"
                                     textTitle="Creative Presentation Ideas"
                                     text={
                                         [
