@@ -220,7 +220,7 @@ export const ThirdUnit = () => {
                                 [
                                     <TrueFalseTask helpText='As you watch the video mark (T) the points discussed in the video and mark (F) the points not discussed in the video.'
                                     video={video31}
-                                    youtubeSrc="https://www.youtube.com/embed/LIWurJCSSRE?si=fagpoef6i1LANMU8"
+                                    youtubeSrc="https://www.youtube.com/embed/d5dBGppo-iA?si=CqWheDarFRoO_jJ2"
                                     textTitle={''}
                                     startNum={0}
                                     statements={
@@ -270,6 +270,15 @@ export const ThirdUnit = () => {
                         type={[
                             <ImagesTask
                                 images={[u3s11,u3s12,u3s13,u3s14,u3s15,u3s16]}
+                                youtubeLinks={[
+                                    "https://www.youtube.com/embed/6b5yduxPS4o?si=JrKXJ8CUUHfR1CN5",
+                                    "https://www.youtube.com/embed/iPi-jJr7kwQ?si=FO33wroffRGKQp3q" ,
+                                    "https://www.youtube.com/embed/Vmtq9xy-i_I?si=LMGVs4kudGCoHRCF",
+                                    "https://www.youtube.com/embed/4fdeUk8858I?si=Ng-aK3kuMtQqZQRs" ,
+                                    "https://www.youtube.com/embed/2ziCdwU4cTA?si=bo-lwRJyQ13forNc" ,
+                                    "https://www.youtube.com/embed/TJ-0uPlS6XA?si=swfLxImJKC2zsfcf",
+                                    
+                                ]}
                                 useLetters
                                 helpText={''}
                                 text={['• Does each slide show have a clear visual message? Is it possible to reconstruct the verbal part of each slide in presentations?','• What are the strong sides of each slide show? And what could or should be improved? Why?','• Have you got an experience of making presentations on the similar topics in different years of your study?']}
@@ -318,7 +327,7 @@ export const ThirdUnit = () => {
                                     contType='none'
                                     useNums
                                     video={video32}
-                                    youtubeSrc="https://www.youtube.com/embed/H9Sk0DBLoFY?si=mZ-U69yxAU4zlxBc"
+                                    youtubeSrc="https://www.youtube.com/embed/77g7WxQr5og?si=kZwWP9SxYUINpWYp" 
                                     textTitle="Creative Presentation Ideas"
                                     text={
                                         [

@@ -171,7 +171,7 @@ export const About = ()=>{
                 <ul><a className='link' href="https://www.youtube.com/watch?v=BuB7IhWZnJs">31 Creative Presentation Ideas to Delight Your Audience </a></ul>
                 <ul><a className='link' href="https://www.youtube.com/watch?v=TmbQFWBvTtY">Body Language for Presentations  </a></ul>
                 <ul><a className='link' href="https://www.youtube.com/watch?v=Q5WT2vweFRY">Presenting and Public Speaking Tips - how to improve skills & confidence  </a></ul>
-                <ul><a className='link' href="https://youtu.be/m1961RJLWgI?si=3H0vumXGOo4SeDnZ">Краткий видео-гайд по работе со средствами машинного перевода  </a></ul>
+                <ul><a className='link' href="https://www.youtube.com/watch?v=drz24AE7A6Y">Краткий видео-гайд по работе со средствами машинного перевода  </a></ul>
             </ol>
 
             <p className="about-title mt-4">

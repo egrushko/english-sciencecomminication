@@ -9,13 +9,14 @@ export const Video = ({vid, youtubeSrc, className}) => {
                 className='w-full flex justify-center'
             >
                 <iframe 
-                    width="1280" 
-                    height="720" 
-                    src={youtubeSrc} 
+                    width="950" 
+                    height="540" 
+                    src={youtubeSrc + '&rel=0'} 
                     title="YouTube video player" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" 
+                    rel='0'
                     allowfullscreen></iframe>
                 
             </div>

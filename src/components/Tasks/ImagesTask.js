@@ -1,6 +1,6 @@
 import { TextContainer } from '../TasksUtils/TextContainer';
 import { Video } from '../TasksUtils/Video';
-export const ImagesTask = ({images,useLetters,helpText,text}) => {
+export const ImagesTask = ({images, youtubeLinks,useLetters,helpText,text}) => {
     const imText = images;
     if(useLetters){
         for(let i = 0; i<images.length;i++)
@@ -12,7 +12,7 @@ export const ImagesTask = ({images,useLetters,helpText,text}) => {
                 <div className="image">
                 {
                     images?
-                    <Video vid={images[i]}/>:''
+                    <Video vid={images[i]} youtubeSrc={youtubeLinks[i]}/>:''
                 }
                 
                 </div>
