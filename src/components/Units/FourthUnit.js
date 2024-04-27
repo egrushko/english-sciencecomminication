@@ -211,15 +211,15 @@ export const FourthUnit = () => {
                                     contType='none'
                                     useNums
                                     video={[""]}
-                                    youtubeSrc="https://www.youtube.com/embed/XGT-cEKYPsU?si=s_fj03LmLQRdyMwl" 
+                                    youtubeSrc="https://www.youtube.com/embed/rZ5rqq9oigM?si=83XT7Qe1fGWWUBHr" 
                                     textTitle="Presenting and public speaking tips"
                                     toBold={["Focus on the audience.","Delete all excess text from your slides.","Keep it simple.","Rehearse."]}
                                     text={
                                         [
-                                            'Focus on the audience. Have clear purposes about your impact on the audience. Decide on what you want them to {inputs[0]} after your presentation.\n'+
-                                            'Delete all excess text from your slides. Don’t waste your listeners’ time by putting {inputs[1]} on your slides. They are not going to read them but will most likely start {inputs[2]}. Don’t use slides as your {inputs[3]}. If you want to effectively get your message across use powerful {inputs[4]} instead.\n'+
-                                            'Keep it simple. Include only relevant and essential material in your presentation. Learn to {inputs[5]} which doesn’t suit your purposes. Also avoid complicated and sophisticated language. Rather use {inputs[6]} to make your talk clear and understandable.\n'+
-                                            'Rehearse. You need to get serious about rehearsing if you’d like to succeed as a presenter. If you don’t prepare, then {inputs[7]}.'
+                                            '#1 - Focus on the audience. Have clear purposes about your impact on the audience. Decide on what you want them to {inputs[0]} after your presentation.\n'+
+                                            '#2 - Delete all excess text from your slides. Don’t waste your listeners’ time by putting {inputs[1]} on your slides. They are not going to read them but will most likely start {inputs[2]}. Don’t use slides as your {inputs[3]}. If you want to effectively get your message across use powerful {inputs[4]} instead.\n'+
+                                            '#3 - Keep it simple. Include only relevant and essential material in your presentation. Learn to {inputs[5]} which doesn’t suit your purposes. Also avoid complicated and sophisticated language. Rather use {inputs[6]} to make your talk clear and understandable.\n'+
+                                            '#4 - Rehearse. You need to get serious about rehearsing if you’d like to succeed as a presenter. If you don’t prepare, then {inputs[7]}.'
                                         ]
                                     }
                                     values={['think, feel and do','loads of bullet points',['daydreaming','day-dreaming'],'notes','images and pictures','cut out material','simple wording','prepare to fail']}
@@ -275,7 +275,7 @@ export const FourthUnit = () => {
                                 image = {v42}
                                 text={['How does the information about the importance of nonverbal communication presented in this video compare with the one presented in Task 6:','       • What is similar?','       • What is different?']}
                                 video={""} 
-                                youtubeSrc="https://www.youtube.com/embed/rZ5rqq9oigM?si=83XT7Qe1fGWWUBHr" 
+                                youtubeSrc="https://www.youtube.com/embed/XGT-cEKYPsU?si=s_fj03LmLQRdyMwl" 
                             />
                         }
                     />,

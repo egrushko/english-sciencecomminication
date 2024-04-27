@@ -2,15 +2,15 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 import { videoResource } from '../../config'
 
-export const Video = ({vid, youtubeSrc, className}) => {
+export const Video = ({vid, youtubeSrc, className, videoSize}) => {
     if (videoResource == 'youtube' && youtubeSrc) {
         return (
             <div
                 className='w-full flex justify-center'
             >
                 <iframe 
-                    width="950" 
-                    height="540" 
+                    width={videoSize?.width || '950'} 
+                    height={videoSize?.height || '540'}
                     src={youtubeSrc + '&rel=0'} 
                     title="YouTube video player" 
                     frameborder="0" 

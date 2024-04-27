@@ -1,7 +1,7 @@
 import '../../css/VideoShow.css'
 import {Video} from '../TasksUtils/Video'
 
-export const VideoShow = ({video, youtubeSrc,image,text,justText}) => {
+export const VideoShow = ({video, youtubeSrc,image,text,justText, videoSize}) => {
     const textWithTitles = Array(text?text.length:0);
     for(let i = 0;i<text.length;i++)
     {
@@ -16,7 +16,7 @@ export const VideoShow = ({video, youtubeSrc,image,text,justText}) => {
     }
     return(
         <div className='video-show'>
-            <Video vid={video} youtubeSrc={youtubeSrc}/>
+            <Video vid={video} youtubeSrc={youtubeSrc} videoSize={videoSize}/>
             {text?<div className={'text-container'}>
                 {textWithTitles}
             </div>:''}

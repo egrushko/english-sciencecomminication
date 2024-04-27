@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { CheckWindow } from '../../TasksUtils/CheckWindow';
 import {Video} from '../../TasksUtils/Video'
 
-export const InputCheckTask = ({video, youtubeSrc,toBold,links,values,text,baseText,type,useAB,helpText,contType,justText,placeholders,startNum,textTitle,useNums,useInputLength, hasNumStart, textLinkText, textLinkLink, extraTextContent}) => {
+export const InputCheckTask = ({video, youtubeSrc, videoSize,toBold,links,values,text,baseText,type,useAB,helpText,contType,justText,placeholders,startNum,textTitle,useNums,useInputLength, hasNumStart, textLinkText, textLinkLink, extraTextContent, }) => {
   const reactStringReplace = require('react-string-replace');
   const [bools,setBools] = useState(Array(values.length).fill(false));
   function mutateBool(mutateIndex, value) {
@@ -92,7 +92,7 @@ export const InputCheckTask = ({video, youtubeSrc,toBold,links,values,text,baseT
                         {helpText}
                     </p>
                 </span>:''}
-        {video?<Video vid={video} youtubeSrc={youtubeSrc}/>:''}
+        {video?<Video vid={video} youtubeSrc={youtubeSrc} videoSize={videoSize}/>:''}
         {baseText && 
           <>
             {type==='words'?<div className='input-words'>{baseText}</div>:''}
