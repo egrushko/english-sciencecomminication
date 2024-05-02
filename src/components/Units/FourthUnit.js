@@ -222,7 +222,7 @@ export const FourthUnit = () => {
                                             '#4 - Rehearse. You need to get serious about rehearsing if you’d like to succeed as a presenter. If you don’t prepare, then {inputs[7]}.'
                                         ]
                                     }
-                                    values={['think, feel and do','loads of bullet points',['daydreaming','day-dreaming'],'notes','images and pictures','cut out material','simple wording','prepare to fail']}
+                                    values={['think, feel and do','loads of bullet points',['daydreaming','day-dreaming'],['notes', 'speaker notes'],'images and pictures',['cut out material', 'cut out content'],'simple wording','prepare to fail']}
                                 />
                             }
                         />,
@@ -288,7 +288,7 @@ export const FourthUnit = () => {
                         text={
                             [
                                 '• When was the last time that you had to make a presentation and speak before your fellow students at the university? What was the subject of the presentation? Was it in Russian or in English? How did you feel about it?',
-                                '• Have you ever been a speaker at a real-life event but not just presenting your home assignment in the classroom? What kind of event was that? Was is it a successful and enjoyable experience for you? Why?',
+                                '• Have you ever been a speaker at a real-life event but not just presenting your home assignment in the classroom? What kind of event was that? Was it a successful and enjoyable experience for you? Why?',
                                 '• Which recommendations about body language and nonverbal communication do you find most challenging to follow? And which of them should be an absolute must? Why?',
                                 '• Do you find your public speaking skills efficient? Why? Why not?',
                                 '• Are you planning to do public speaking in the future? What kind of occasion might that be?'

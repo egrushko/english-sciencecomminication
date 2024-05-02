@@ -35,21 +35,15 @@ export const InputCheckTask = ({video, youtubeSrc, videoSize,toBold,links,values
       for(let j =0; j<text.length;j++)
         text[j] = reactStringReplace(text[j],changers[i][0],()=>(useNums?<span className='bold'>({i+1})  {changers[i][1]}</span>:changers[i][1]));
   }
-  useEffect(() => {
-    if(toBold)
+
+  if(toBold) {
     for(let i =0; i<toBold.length;i++){
       for(let j =0; j<text.length;j++){
         text[j] = reactStringReplace(text[j],toBold[i],(x) => {
-          return x===toBold[i]?<span className='bold color-red'>{toBold[i]}</span>:x
+          return x===toBold[i]?<span className='bold'>{toBold[i]}</span>:x
         });
       }
     }
-  },[])
-
-  if (textLinkLink && textLinkText) {
-    text.forEach(textElem => {
-      console.log(textElem)
-    })
   }
 
 
