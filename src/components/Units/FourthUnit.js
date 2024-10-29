@@ -230,7 +230,8 @@ export const FourthUnit = () => {
                     title={'Vocabulary - 5'}
                     helpText = {'Complete the text below with the words from the box. There are more words in the box than you need to use.'}
                     type={[
-                        <InputCheckTask startNum = {0}
+                        <InputCheckTask 
+                            startNum = {0}
                             useNums = {true}
                             contType = 'none'
                             type={'words'}
@@ -248,20 +249,19 @@ export const FourthUnit = () => {
                             helpText={'For questions 1-10, read the text below. Use the word given in capitals in the box to form a word that fits in the gap in each line.'}
                             type={
                                 [
-                                <InputCheckTask 
-                                    startNum = {0}
-                                    useNums = {true}
-                                    contType = 'none'
-                                    type={'line'}
-                                    helpText={''}
-                                    text={['Eye contact: This helps to regulate the flow of communication. It signals interest in others and increases the speaker`s \n{inputs[0]} . Speakers who make eye contact, open the flow of communication and convey interest,\nconcern and {inputs[1]} .\nFacial Expressions: Smiling is a {inputs[2]} cue that transmits friendliness and liking. So, if you smile frequently you will be perceived as more likable, friendly, warm, and {inputs[3]} . Smiling is often contagious, and others will react {inputs[4]} . They will be more comfortable around you and will want to listen to you more.\nGestures: If you fail to gesture while speaking, you may be perceived as {inputs[5]} and stiff. A lively speaking style captures attention and makes the material more interesting and {inputs[6]} understanding.\nPosture and body orientation: You communicate numerous messages by the way you talk and move. Standing erect and leaning forward communicates that you are approachable, receptive, and friendly. Speaking with your back turned or looking at the floor or ceiling should be avoided as it communicates {inputs[7]}.\nVoice: One of the major {inputs[8]} of speakers is that they speak in a monotone voice. Listeners perceive this type of speaker as boring and dull. People report that they learn less and lose interest more quickly when listening to those who have not learned to {inputs[9]} their voices.']}
-                                    
-
-                                    textTitle = {"Nonverbal communication matters "} 
-                                    baseText={['CREDIBLE','WARM','POWER','APPROACH','FAVOUR','BORE','FACILITY','INTERESTING','CRITICAL','MODULATION']}
-                                    toBold={["Eye contact","Facial Expressions","Gestures","Posture and body orientation","Voice"]}
-                                    values = {['CREDIBILITY','WARMTH','POWERFUL','APPROACHABLE','FAVOURABLY','BORING','FACILITATES','DISINTEREST','CRITICISMS','MODULATE']}
-                                />
+                                    <InputCheckTask 
+                                        startNum = {0}
+                                        useNums = {true}
+                                        contType = 'none'
+                                        type={'line'}
+                                        justText={true}
+                                        helpText={''}
+                                        text={['Eye contact: This helps to regulate the flow of communication. It signals interest in others and increases the speaker`s \n{inputs[0]} . Speakers who make eye contact, open the flow of communication and convey interest,\nconcern and {inputs[1]} .\nFacial Expressions: Smiling is a {inputs[2]} cue that transmits friendliness and liking. So, if you smile frequently you will be perceived as more likable, friendly, warm, and {inputs[3]} . Smiling is often contagious, and others will react {inputs[4]} . They will be more comfortable around you and will want to listen to you more.\nGestures: If you fail to gesture while speaking, you may be perceived as {inputs[5]} and stiff. A lively speaking style captures attention and makes the material more interesting and {inputs[6]} understanding.\nPosture and body orientation: You communicate numerous messages by the way you talk and move. Standing erect and leaning forward communicates that you are approachable, receptive, and friendly. Speaking with your back turned or looking at the floor or ceiling should be avoided as it communicates {inputs[7]}.\nVoice: One of the major {inputs[8]} of speakers is that they speak in a monotone voice. Listeners perceive this type of speaker as boring and dull. People report that they learn less and lose interest more quickly when listening to those who have not learned to {inputs[9]} their voices.']}
+                                        //Наличие этой строки почему-то ломают ввод текста        
+                                        // toBold={["Eye contact","Facial Expressions","Gestures","Posture and body orientation","Voice"]}
+                                        baseText={['CREDIBLE','WARM','POWER','APPROACH','FAVOUR','BORE','FACILITY','INTERESTING','CRITICAL','MODULATION']}
+                                        values = {['CREDIBILITY','WARMTH','POWERFUL','APPROACHABLE','FAVOURABLY','BORING','FACILITATES','DISINTEREST','CRITICISMS','MODULATE']}
+                                    />
                                 ]
                                 
                             }
