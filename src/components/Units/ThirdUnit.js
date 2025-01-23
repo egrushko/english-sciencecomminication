@@ -220,7 +220,7 @@ export const ThirdUnit = () => {
                                 [
                                     <TrueFalseTask helpText='As you watch the video mark (T) the points discussed in the video and mark (F) the points not discussed in the video.'
                                     video={video31}
-                                    youtubeSrc="https://www.youtube.com/embed/d5dBGppo-iA?si=CqWheDarFRoO_jJ2"
+                                    youtubeSrc="https://vkvideo.ru/video_ext.php?oid=410332351&id=456239028&hd=2&autoplay=1"
                                     textTitle={''}
                                     startNum={0}
                                     statements={
@@ -248,7 +248,7 @@ export const ThirdUnit = () => {
                                         type={'words'}
                                         video={video31}
                 videoSize={ {width: '720', height: '420'}}
-                                        youtubeSrc="https://www.youtube.com/embed/d5dBGppo-iA?si=CqWheDarFRoO_jJ2"
+                                        youtubeSrc="https://vkvideo.ru/video_ext.php?oid=410332351&id=456239028&hd=2&autoplay=1"
                                         useInputLength
                                         baseText={['Slide transitions',
                                         'Too much information on a slide',
@@ -329,7 +329,7 @@ export const ThirdUnit = () => {
                                     contType='none'
                                     useNums
                                     video={video32}
-                                    youtubeSrc="https://www.youtube.com/embed/77g7WxQr5og?si=kZwWP9SxYUINpWYp" 
+                                    youtubeSrc="https://vkvideo.ru/video_ext.php?oid=410332351&id=456239029&hd=2&autoplay=1" 
                                     textTitle="Creative Presentation Ideas"
                                     text={
                                         [

@@ -308,7 +308,7 @@ export const SecondUnit = () =>{
                         image = {table}
                         text={['• What is the first step in choosing the right reading strategy?','• What reading approaches can students use as part of their university reading habits?']}
                         video={video21} 
-                        youtubeSrc="https://www.youtube.com/embed/X0WHKMlfyuw?si=dGBGGvImE1Q6CwS5"  
+                        youtubeSrc="https://vkvideo.ru/video_ext.php?oid=410332351&id=456239026&hd=2&autoplay=1"  
                     />
                 }
             />,
@@ -321,7 +321,7 @@ export const SecondUnit = () =>{
                         contType='none'
                         useNums
                         video={video22}
-                        youtubeSrc="https://www.youtube.com/embed/d9QYXgN35LU?si=zAcutjYQxeqv8PQy" 
+                        youtubeSrc="https://vkvideo.ru/video_ext.php?oid=410332351&id=456239027&hd=2&autoplay=1" 
                         text={
                             [
                                 'What do you think? Do you need to read journal articles, textbooks and {inputs[0]} the same way? True or False? Well, both answers are right – why? Because it depends on your purpose which will help {inputs[1]}. You have always read for content. Try now to also read looking at the structure. How has the author constructed {inputs[2]} work? Look at the subheadings, {inputs[3]}, tables. Then read looking at the language used. Try making a glossary of the new or {inputs[4]} words. What {inputs[5]} or verbs are commonly used? The structure and language that you {inputs[6]} can also be used in your assignments. Finally, what are the main {inputs[7]} when starting your reading? Be clear about your purpose and what you are {inputs[8]}. Choose the best strategy of skimming, scanning or close reading and then you will be more efficient with your reading and find more {inputs[9]} information. Happy reading!'

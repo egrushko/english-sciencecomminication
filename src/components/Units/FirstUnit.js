@@ -201,7 +201,7 @@ export const FirstUnit = () =>{
             <VideoShow 
                 text={''}
                 video={video1}  
-                youtubeSrc="https://www.youtube.com/embed/r-F2iQHiMOU?si=UacTSM_0rIRzAUgF" 
+                youtubeSrc="https://vkvideo.ru/video_ext.php?oid=410332351&id=456239024&hd=2&autoplay=1" 
                 image={video1img}/>
         }/>,
         <Task
@@ -262,7 +262,7 @@ export const FirstUnit = () =>{
             <VideoShow 
                 video={video2} 
                 videoSize={ {width: '720', height: '420'}}
-                youtubeSrc="https://www.youtube.com/embed/nZ-S4OOxtbs?si=lOeju4QTdMN79TyZ"  
+                youtubeSrc="https://vkvideo.ru/video_ext.php?oid=410332351&id=456239025&hd=2&autoplay=1"  
                 text={[
                     ["                                                           What is the structure of a scientific paper?","\nAll scientific papers have the same general format. They  are  divided  into  distinct  sections  and  each section  contains  a  specific  type  of  information.  The number and the headings of sections may vary among journals,  but  for  the  most  part  a basic  structure  is  maintained.\nTypically,  scientific  papers  are comprised of the following parts: \n\n              1. Title                                                                 4. Introduction                                        8. Acknowledgments (optional)\n              2. Abstract                                                         5. Methods                                                9. References / Bibliography\n              3. Authors and affiliations                          6. Results                                                 10. Appendix / Appendices (optional)\n                                                                                             7. Discussion\nBecause  scientific  papers  are  organized  in  this  way, readers  know  what  to  expect  from  each  part  of  the paper,  and  they  can  quickly  locate  a  specific  type  of information. \nLet’s examine the content in each section of a scientific paper, and discuss why each section may be useful to you as a reader."],
                     ['Title','If it’s well-written it will help you to determine if a paper is interesting and relevant for your project.'],
