@@ -306,7 +306,7 @@ export const ThirdUnit = () => {
                         />,
                         <Task 
                             title={'Vocabulary - 5'}
-                            helpText={'For questions 1-10, read the text below. Use the word given in capitals in the box to form a word that fits in the gap in each line.'}
+                            helpText={'For questions 1-10, read the text below. Use the word given in capitals in the box to form a word that fits in the gap in each line. Note that the numbered words 1 – 10 in the box match the numbered gaps (1) – (10) in the text.'}
                             type={
                                 [
                                 <InputCheckTask startNum = {0} textTitle = {"Designing slides for your presentation"} useNums={true}

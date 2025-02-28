@@ -310,7 +310,7 @@ export const FirstUnit = () =>{
                 [
                   <InputCheckTask startNum = {0} textTitle = {"Writing a scientific research paper"} useNums={true}
                   baseText={['KNOW','IMPLY','READ','COMPOSITION','REPUTATION','RESEARCH','INTRODUCE','REVIEW','ATTRACTION','ESSENTIAL']}
-                  helpText={'For questions 1-10, read the text below. Use the word given in capitals in the box to form a word that fits in the gap in each line.'}
+                  helpText={'For questions 1-10, read the text below. Use the word given in capitals in the box to form a word that fits in the gap in each line. Note that the numbered words 1 – 10 in the box match the numbered gaps (1) – (10) in the text.'}
                   text={['Writing a scientific research paper requires more than ' 
                     +' {inputs[0]}  about your study. It means explaining the important methods, findings, and  {inputs[1]} of your study '
                     +'to other researchers and  {inputs[2]}.\nIt also means '
@@ -328,7 +328,7 @@ export const FirstUnit = () =>{
                   />,
                   <InputCheckTask startNum = {0} textTitle={'Scientific journal rankings'} useNums={true}
                   baseText={['VARY','PROMINENT','SIGNIFY','ROUGH','PUBLISH','INFLUENCE','SUFFICE','IMAGINE','DATE','REVISE']}
-                  helpText={'For questions 1-10, read the text below. Use the word given in capitals in the box to form a word that fits in the gap in each line.'}
+                  helpText={'For questions 1-10, read the text below. Use the word given in capitals in the box to form a word that fits in the gap in each line. Note that the numbered words 1 – 10 in the box match the numbered gaps (1) – (10) in the text.'}
                   text={['Journal rankings are formed according to {inputs[0]} indicators depending ' 
                     +'on the quality of the research material, citations, and {inputs[1]} in the '
                     +'subject area. One of the most {inputs[2]} metrics within the Scopus and '
