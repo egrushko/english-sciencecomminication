@@ -11,14 +11,15 @@ export const TextContainer = ({text,justText,type,title, hasNum, extraTextConten
             rows[i]=<li><p>{numPart}{text[i]}</p></li>;
         }
     }
-
+    console.log(title, justText, type, text)
     return(
         <div className="text-container">
             {justText?
                 (type!=='none'?
                 <p><h3>{text[0]}</h3>{text[1]}</p>:
-                <p>{text}</p>):
+                <p>{title?<p>{title}</p>:''}{text}</p>):
                 <ol type={type} className={type==='none'?'no-type':''}>
+                    asdasd
                     {title?<li><h3>{title}</h3></li>:''}
                     {rows}
                     {extraTextContent && extraTextContent}
